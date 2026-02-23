@@ -1,0 +1,6 @@
+@GpsMediaStamp.Web_HostAddress = http://localhost:5039
+
+GET {{GpsMediaStamp.Web_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
