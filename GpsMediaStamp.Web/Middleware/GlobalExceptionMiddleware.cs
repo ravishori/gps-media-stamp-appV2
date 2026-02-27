@@ -2,7 +2,8 @@
 using Microsoft.Extensions.Logging;
 using System;
 using System.Net;
-using System.Text.Json;
+using System.Net.Mail;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace GpsMediaStamp.Web.Middleware
@@ -28,20 +29,62 @@ namespace GpsMediaStamp.Web.Middleware
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Unhandled exception occurred.");
+                _logger.LogError(ex, "Unhandled Exception Occurred");
 
-                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
-                context.Response.ContentType = "application/json";
+                await SendErrorEmailAsync(ex, context);
 
-                var response = new
+                if (context.Request.Path.StartsWithSegments("/api"))
                 {
-                    error = "An unexpected server error occurred.",
-                    statusCode = context.Response.StatusCode
+                    context.Response.StatusCode = 500;
+                    context.Response.ContentType = "application/json";
+
+                    await context.Response.WriteAsync(
+                        "{\"error\":\"Internal server error\"}");
+                }
+                else
+                {
+                    context.Response.Clear();
+                    context.Response.Redirect("/Error");
+                }
+            }
+        }
+
+        private async Task SendErrorEmailAsync(Exception ex, HttpContext context)
+        {
+            try
+            {
+                var smtpClient = new SmtpClient("smtp.gmail.com")
+                {
+                    Port = 587,
+                    Credentials = new NetworkCredential(
+                        "your-email@gmail.com",
+                        "your-app-password"),
+                    EnableSsl = true
                 };
 
-                var json = JsonSerializer.Serialize(response);
+                var body = new StringBuilder();
+                body.AppendLine("New Exception Occurred");
+                body.AppendLine("---------------------------");
+                body.AppendLine($"Time: {DateTime.Now}");
+                body.AppendLine($"Path: {context.Request.Path}");
+                body.AppendLine($"Message: {ex.Message}");
+                body.AppendLine($"StackTrace: {ex.StackTrace}");
 
-                await context.Response.WriteAsync(json);
+                var mailMessage = new MailMessage
+                {
+                    From = new MailAddress("your-email@gmail.com"),
+                    Subject = "🚨 GpsMediaStamp System Error",
+                    Body = body.ToString(),
+                    IsBodyHtml = false
+                };
+
+                mailMessage.To.Add("admin-email@gmail.com");
+
+                await smtpClient.SendMailAsync(mailMessage);
+            }
+            catch (Exception emailEx)
+            {
+                _logger.LogError(emailEx, "Failed to send error email.");
             }
         }
     }

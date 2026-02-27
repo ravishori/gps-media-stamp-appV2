@@ -1,8 +1,15 @@
 ﻿using GpsMediaStamp.Web.Models;
-using GpsMediaStamp.Web.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
+///----------------//
+using GpsMediaStamp.Application.Interfaces;
+using GpsMediaStamp.Application.Interfaces.Common;
+using GpsMediaStamp.Application.Interfaces.Image;
+using GpsMediaStamp.Application.Interfaces.Security;
+using GpsMediaStamp.Application.Interfaces.Qr;
+using GpsMediaStamp.Application.Interfaces.Video;
 
+//------------------//
 namespace GpsMediaStamp.Web.Controllers
 {
     [ApiController]

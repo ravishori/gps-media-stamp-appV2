@@ -1,3 +1,6 @@
 <Solution>
+  <Project Path="GpsMediaStamp.Application/GpsMediaStamp.Application.csproj" Id="21fdfaf4-3eca-4761-8a5e-769aff546f55" />
+  <Project Path="GpsMediaStamp.Domain/GpsMediaStamp.Domain.csproj" />
+  <Project Path="GpsMediaStamp.Infrastructure/GpsMediaStamp.Infrastructure.csproj" Id="e37b01ff-31ec-412c-99ae-cc86e03a43eb" />
   <Project Path="GpsMediaStamp.Web/GpsMediaStamp.Web.csproj" />
 </Solution>

@@ -1,0 +1,176 @@
+﻿
+using GpsMediaStamp.Web.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Globalization;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
+
+using GpsMediaStamp.Application.Interfaces;
+using GpsMediaStamp.Application.Interfaces.Common;
+using GpsMediaStamp.Application.Interfaces.Security;
+using GpsMediaStamp.Application.Interfaces.Qr;
+using GpsMediaStamp.Application.Interfaces.Video;
+
+namespace GpsMediaStamp.Web.Controllers
+{
+    [ApiController]
+    [Route("api/video")]
+    public class MediaController : ControllerBase
+    {
+        private readonly IFileStorageService _fileStorage;
+        private readonly IVideoStampService _videoStamp;
+        private readonly IHashService _hashService;
+        private readonly ISigningService _signingService;
+        private readonly IQrCodeService _qrService;
+        private readonly ILocationService _locationService;
+        private readonly ILogger<MediaController> _logger;
+
+        private const long MaxFileSize = 100 * 1024 * 1024;
+
+        private readonly string[] AllowedVideoExtensions =
+        {
+            ".mp4", ".mov", ".avi"
+        };
+
+        public MediaController(
+            IFileStorageService fileStorage,
+            IVideoStampService videoStamp,
+            IHashService hashService,
+            ISigningService signingService,
+            IQrCodeService qrService,
+            ILocationService locationService,
+            ILogger<MediaController> logger)
+        {
+            _fileStorage = fileStorage;
+            _videoStamp = videoStamp;
+            _hashService = hashService;
+            _signingService = signingService;
+            _qrService = qrService;
+            _locationService = locationService;
+            _logger = logger;
+        }
+
+        [HttpPost("upload")]
+        [Consumes("multipart/form-data")]
+        [RequestSizeLimit(MaxFileSize)]
+        public async Task<IActionResult> Upload([FromForm] UploadVideoRequest request)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                    return BadRequest(ModelState);
+
+                if (request.Video == null || request.Video.Length == 0)
+                    return BadRequest(new { error = "No video file uploaded." });
+
+                if (request.Video.Length > MaxFileSize)
+                    return BadRequest(new { error = "File size exceeds 100 MB limit." });
+
+                var extension = Path.GetExtension(request.Video.FileName).ToLowerInvariant();
+                if (!AllowedVideoExtensions.Contains(extension))
+                    return BadRequest(new { error = "Invalid file extension." });
+
+                _logger.LogInformation("Video upload started: {FileName}", request.Video.FileName);
+
+                // 1️⃣ Save RAW
+                using var rawStream = request.Video.OpenReadStream();
+                var rawPath = await _fileStorage.SaveRawAsync(rawStream, request.Video.FileName);
+
+                // 2️⃣ Hash
+                var rawHash = _hashService.GenerateSha256(rawPath);
+
+                // 3️⃣ Sign
+                var signature = _signingService.SignHash(rawHash);
+
+                var visibleHash = rawHash.Substring(0, 20);
+
+                // 4️⃣ Reverse Geocode (Google API Call)
+                string address = "Address unavailable";
+
+                try
+                {
+                    address = await _locationService.ReverseGeocodeAsync(
+                    request.Latitude,
+                    request.Longitude) ?? "Address unavailable";
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogWarning("Reverse geocoding failed: {Message}", ex.Message);
+                }
+                var random = new Random().Next(1000, 9999);
+                var evidenceId = $"EV{DateTime.UtcNow:yyyyMMddHHmmss}{random}";
+                // 5️⃣ Build Stamp Text
+                var stampText =
+                    $"{address}\n" +
+                    $"Lat: {request.Latitude} | Lon: {request.Longitude}\n" +
+                    $"{request.Timestamp:dd-MMM-yyyy HH:mm} IST\n" +
+                    $"SHA256: {visibleHash}...\n" +
+                    $"text='Evidence ID: {evidenceId}'";
+
+                // 6️⃣ QR Payload
+                var qrPayload = JsonSerializer.Serialize(new
+                {
+                    hash = rawHash,
+                    signature = signature,
+                    algorithm = "RSA-SHA256"
+                });
+
+                var qrPath = await _qrService.GenerateQrAsync(qrPayload);
+
+                // 7️⃣ Stamp Video
+                var tempStampedPath = await _videoStamp.StampVideoAsync(
+                    rawPath,
+                    stampText,
+                    qrPath);
+
+                // 8️⃣ Save Final
+                string finalStampedPath;
+
+                using (var stampedStream = System.IO.File.OpenRead(tempStampedPath))
+                {
+                    finalStampedPath = await _fileStorage.SaveStampedAsync(
+                        stampedStream,
+                        request.Video.FileName);
+                }
+
+                var stampedHash = _hashService.GenerateSha256(finalStampedPath);
+
+                // Cleanup
+                if (System.IO.File.Exists(qrPath))
+                    System.IO.File.Delete(qrPath);
+
+                if (System.IO.File.Exists(tempStampedPath))
+                {
+                    await Task.Delay(500);
+                    System.IO.File.Delete(tempStampedPath);
+                }
+
+                _logger.LogInformation("Video upload completed successfully.");
+
+                return Ok(new UploadResponse
+                {
+                    RawFilePath = rawPath,
+                    StampedFilePath = finalStampedPath,
+                    RawFileHash = rawHash,
+                    StampedFileHash = stampedHash,
+                    Signature = signature,
+                    Message = "Video stamped with GPS address and digitally signed."
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Video processing failed");
+
+                return StatusCode(500, new
+                {
+                    error = "Internal server error",
+                    detail = ex.Message
+                });
+            }
+        }
+    }
+}
