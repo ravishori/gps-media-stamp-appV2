@@ -1,0 +1,37 @@
+# ==========================================
+
+# GOOGLE CLOUD RUN DEPLOYMENT (.NET API)
+
+# Project: GPS Media Stamp App V2
+
+# ==========================================
+
+# STEP 1 — Check build logs (optional debugging)
+
+gcloud builds log fdc9dd27-7425-4808-b242-bebd3ce119ab 
+--region=us-central1
+
+# STEP 2 — Deploy directly from GitHub repository
+
+gcloud run deploy gps-media-stamp-api 
+--source https://github.com/ravishori/gps-media-stamp-appV2 
+--region us-central1 
+--allow-unauthenticated 
+--memory 2Gi 
+--cpu 1
+
+# STEP 3 — After deployment, Cloud Run will return a public URL
+
+# Example
+
+# https://gps-media-stamp-api-xxxxx-uc.a.run.app
+
+# Your Flutter app will call APIs like:
+
+# POST
+
+# https://gps-media-stamp-api-xxxxx-uc.a.run.app/api/video/upload
+
+# POST
+
+# https://gps-media-stamp-api-xxxxx-uc.a.run.app/api/image/upload

@@ -1,0 +1,1065 @@
+2026-03-02 10:11:57.987 +05:30 [INF] User profile is available. Using 'C:\Users\ravin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-02 10:11:58.263 +05:30 [WRN] Overriding address(es) 'https://localhost:7124, http://0.0.0.0:5039'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-02 10:11:58.311 +05:30 [INF] Now listening on: http://[::]:5039
+2026-03-02 10:11:58.376 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-02 10:11:58.377 +05:30 [INF] Hosting environment: Development
+2026-03-02 10:11:58.379 +05:30 [INF] Content root path: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web
+2026-03-02 10:56:42.962 +05:30 [INF] User profile is available. Using 'C:\Users\ravin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-02 10:56:43.273 +05:30 [WRN] Overriding address(es) 'https://localhost:7124, http://0.0.0.0:5039'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-02 10:56:43.491 +05:30 [INF] Now listening on: http://[::]:5039
+2026-03-02 10:56:43.558 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-02 10:56:43.565 +05:30 [INF] Hosting environment: Development
+2026-03-02 10:56:43.577 +05:30 [INF] Content root path: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web
+2026-03-02 10:56:51.054 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=--dio-boundary-3204257459 398296
+2026-03-02 10:56:51.196 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 10:56:51.234 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 10:56:51.311 +05:30 [INF] Image upload started: 1772429208415.jpg
+2026-03-02 10:56:51.410 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\1772429208415_20260302052651353.jpg
+2026-03-02 10:56:51.749 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 10:56:51.756 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 10:56:52.035 +05:30 [INF] Received HTTP response headers after 274.1771ms - 200
+2026-03-02 10:56:52.046 +05:30 [INF] End processing HTTP request after 301.3811ms - 200
+2026-03-02 10:56:52.107 +05:30 [INF] Resolved Address: Mumbai
+Maharashtra, India
+2026-03-02 10:56:55.846 +05:30 [INF] Image upload completed: 1772429208415.jpg
+2026-03-02 10:56:55.885 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 10:56:55.952 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 4697.2025ms
+2026-03-02 10:56:55.957 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 10:56:55.965 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 4918.6139ms
+2026-03-02 10:57:05.008 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=--dio-boundary-1003116823 390479
+2026-03-02 10:57:05.055 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 10:57:05.077 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 10:57:05.102 +05:30 [INF] Image upload started: 1772429222442.jpg
+2026-03-02 10:57:05.137 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\1772429222442_20260302052705106.jpg
+2026-03-02 10:57:05.146 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 10:57:05.149 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 10:57:05.350 +05:30 [INF] Received HTTP response headers after 192.692ms - 200
+2026-03-02 10:57:05.367 +05:30 [INF] End processing HTTP request after 220.9763ms - 200
+2026-03-02 10:57:05.447 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 10:57:05.567 +05:30 [INF] Image upload completed: 1772429222442.jpg
+2026-03-02 10:57:05.570 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 10:57:05.572 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 478.9749ms
+2026-03-02 10:57:05.574 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 10:57:05.576 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 568.5056ms
+2026-03-02 10:57:24.975 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/ - multipart/form-data; boundary=dart-http-boundary-HmYj34JSdqOAj.lJ4K4rwgot+OJo-QTyk8dj_tGDscAaa4hnrD0 20783054
+2026-03-02 10:57:24.982 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/ - 404 0 null 7.4263ms
+2026-03-02 10:57:25.000 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://192.168.1.132:5039/, Response status code: 404
+2026-03-02 10:57:25.007 +05:30 [INF] Connection id "0HNJO3H7CJ62R", Request id "0HNJO3H7CJ62R:00000001": the application completed without reading the entire request body.
+2026-03-02 10:57:45.037 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/ - multipart/form-data; boundary=dart-http-boundary-0YUpb51wStS2aoQjM8L4NU7eE1ntgu8yGNXgFVB_gOls42N-Q8+ 20656014
+2026-03-02 10:57:45.043 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/ - 404 0 null 5.7348ms
+2026-03-02 10:57:45.050 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST http://192.168.1.132:5039/, Response status code: 404
+2026-03-02 10:57:45.053 +05:30 [INF] Connection id "0HNJO3H7CJ62S", Request id "0HNJO3H7CJ62S:00000001": the application completed without reading the entire request body.
+2026-03-02 11:04:08.118 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
+2026-03-02 11:04:08.360 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.html - 304 null null 242.1519ms
+2026-03-02 11:04:08.403 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - null null
+2026-03-02 11:04:08.408 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.css - null null
+2026-03-02 11:04:08.404 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-02 11:04:08.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.css - 304 null null 36.3631ms
+2026-03-02 11:04:08.415 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-02 11:04:08.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - 304 null null 39.8515ms
+2026-03-02 11:04:08.416 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - null null
+2026-03-02 11:04:08.425 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.js - null null
+2026-03-02 11:04:08.462 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 57.8535ms
+2026-03-02 11:04:08.468 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_vs/browserLink - null null
+2026-03-02 11:04:08.488 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - 304 null null 72.6004ms
+2026-03-02 11:04:08.512 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.js - 304 null null 87.8106ms
+2026-03-02 11:04:08.534 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - 304 null null 118.9591ms
+2026-03-02 11:04:08.631 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_vs/browserLink - 200 null text/javascript; charset=UTF-8 163.3341ms
+2026-03-02 11:04:08.666 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - null null
+2026-03-02 11:04:08.704 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.5035ms
+2026-03-02 11:15:16.152 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=--dio-boundary-4247531560 367887
+2026-03-02 11:15:16.158 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 11:15:16.162 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 11:15:16.258 +05:30 [INF] Image upload started: 1772430315407.jpg
+2026-03-02 11:15:16.326 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\1772430315407_20260302054516281.jpg
+2026-03-02 11:15:16.344 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 11:15:16.348 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 11:15:16.637 +05:30 [INF] Received HTTP response headers after 284.5602ms - 200
+2026-03-02 11:15:16.669 +05:30 [INF] End processing HTTP request after 325.2333ms - 200
+2026-03-02 11:15:16.685 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 11:15:17.314 +05:30 [INF] Image upload completed: 1772430315407.jpg
+2026-03-02 11:15:17.325 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 11:15:17.364 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 1199.4033ms
+2026-03-02 11:15:17.371 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 11:15:17.379 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1227.0795ms
+2026-03-02 11:15:25.345 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=--dio-boundary-4158530491 468799
+2026-03-02 11:15:25.436 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 11:15:25.439 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 11:15:25.456 +05:30 [INF] Image upload started: 1772430324184.jpg
+2026-03-02 11:15:25.482 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\1772430324184_20260302054525457.jpg
+2026-03-02 11:15:25.489 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 11:15:25.495 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 11:15:25.690 +05:30 [INF] Received HTTP response headers after 193.6874ms - 200
+2026-03-02 11:15:25.841 +05:30 [INF] End processing HTTP request after 351.7018ms - 200
+2026-03-02 11:15:25.851 +05:30 [INF] Resolved Address: Mumbai
+Maharashtra, India
+2026-03-02 11:15:26.102 +05:30 [INF] Image upload completed: 1772430324184.jpg
+2026-03-02 11:15:26.138 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 11:15:26.146 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 698.9842ms
+2026-03-02 11:15:26.150 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 11:15:26.245 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 900.698ms
+2026-03-02 11:15:41.665 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-dDWLJW5nQ83PM_Wb3eAsJBAq9CpjzDqLdmdR1oj3lng89Pl-1Nx 16835998
+2026-03-02 11:15:41.674 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 11:15:41.686 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 11:15:42.663 +05:30 [INF] Video upload started: REC7680649966761023189.mp4
+2026-03-02 11:15:42.795 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC7680649966761023189_20260302054542669.mp4
+2026-03-02 11:15:42.798 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 11:15:42.800 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 11:15:43.014 +05:30 [INF] Received HTTP response headers after 212.7566ms - 200
+2026-03-02 11:15:43.064 +05:30 [INF] End processing HTTP request after 265.4787ms - 200
+2026-03-02 11:15:43.108 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 11:15:49.038 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7680649966761023189_20260302054548966.mp4
+2026-03-02 11:15:49.047 +05:30 [INF] Video upload completed successfully.
+2026-03-02 11:15:49.050 +05:30 [INF] Executing OkObjectResult, writing value of type 'GpsMediaStamp.Web.Models.UploadResponse'.
+2026-03-02 11:15:49.053 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 7354.469ms
+2026-03-02 11:15:49.055 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 11:15:49.060 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 7395.1287ms
+2026-03-02 14:06:38.064 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-HhB7+5kBFfKNfg7dw0pTU3o308F3K1DWNfBn-GN4Wu4U+iup.zp 369167
+2026-03-02 14:06:38.083 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:06:38.096 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:06:38.179 +05:30 [INF] Image upload started: CAP4606023068217570196.jpg
+2026-03-02 14:06:38.241 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP4606023068217570196_20260302083638190.jpg
+2026-03-02 14:06:38.251 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:06:38.254 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:06:38.571 +05:30 [INF] Received HTTP response headers after 313.1552ms - 200
+2026-03-02 14:06:38.573 +05:30 [INF] End processing HTTP request after 322.5535ms - 200
+2026-03-02 14:06:38.628 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:06:38.933 +05:30 [INF] Image upload completed: CAP4606023068217570196.jpg
+2026-03-02 14:06:38.937 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:06:38.940 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 837.0157ms
+2026-03-02 14:06:38.951 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:06:38.955 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 892.3797ms
+2026-03-02 14:06:57.311 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-e3zLrCjOm2WBiLVkBwe-xOjKv2yb2F0b64YiZ-mCNeMAaDd6E88 21268732
+2026-03-02 14:06:57.320 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 14:06:57.322 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 14:07:00.835 +05:30 [INF] Video upload started: REC349275189363324196.mp4
+2026-03-02 14:07:01.159 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC349275189363324196_20260302083700844.mp4
+2026-03-02 14:07:01.172 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:07:01.173 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:07:01.410 +05:30 [INF] Received HTTP response headers after 235.3926ms - 200
+2026-03-02 14:07:01.438 +05:30 [INF] End processing HTTP request after 266.6511ms - 200
+2026-03-02 14:07:01.463 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:07:03.468 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC349275189363324196_20260302083703139.mp4
+2026-03-02 14:07:03.491 +05:30 [INF] Video upload completed successfully.
+2026-03-02 14:07:03.498 +05:30 [INF] Executing OkObjectResult, writing value of type 'GpsMediaStamp.Web.Models.UploadResponse'.
+2026-03-02 14:07:03.501 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 6173.7026ms
+2026-03-02 14:07:03.505 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 14:07:03.508 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 6196.9639ms
+2026-03-02 14:25:45.869 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-hK6OzKolE9AVg9VpzkQU.UvV8+fb4RmFP4T2v0LZ02hyEOhj_mr 459547
+2026-03-02 14:25:45.903 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:25:45.906 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:25:45.940 +05:30 [INF] Image upload started: CAP1045524401206131727.jpg
+2026-03-02 14:25:45.964 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP1045524401206131727_20260302085545942.jpg
+2026-03-02 14:25:45.969 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:25:45.970 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:25:46.278 +05:30 [INF] Received HTTP response headers after 307.5386ms - 200
+2026-03-02 14:25:46.286 +05:30 [INF] End processing HTTP request after 317.6438ms - 200
+2026-03-02 14:25:46.288 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:25:46.499 +05:30 [INF] Image upload completed: CAP1045524401206131727.jpg
+2026-03-02 14:25:46.626 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:25:46.627 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 720.2179ms
+2026-03-02 14:25:46.628 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:25:46.630 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 761.6389ms
+2026-03-02 14:25:54.171 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-5kYgWGH91vETMiCdoLg_d3F7yMMEZsu5QUD4hkLaQp2t9VCnXrO 504318
+2026-03-02 14:25:54.194 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:25:54.194 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:25:54.211 +05:30 [INF] Image upload started: CAP5453583697994042550.jpg
+2026-03-02 14:25:54.231 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP5453583697994042550_20260302085554211.jpg
+2026-03-02 14:25:54.237 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:25:54.240 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:25:54.472 +05:30 [INF] Received HTTP response headers after 229.6705ms - 200
+2026-03-02 14:25:54.477 +05:30 [INF] End processing HTTP request after 239.5015ms - 200
+2026-03-02 14:25:54.479 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:25:54.585 +05:30 [INF] Image upload completed: CAP5453583697994042550.jpg
+2026-03-02 14:25:54.588 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:25:54.590 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 393.5432ms
+2026-03-02 14:25:54.591 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:25:54.593 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 424.2155ms
+2026-03-02 14:26:07.513 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-q-sOixF_UX30dVkPyLhvGfaSV2xOjYOI4oAmVRU7A2ajZRB5Phb 10753571
+2026-03-02 14:26:07.519 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 14:26:07.520 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 14:26:08.138 +05:30 [INF] Video upload started: REC3154376733370617102.mp4
+2026-03-02 14:26:08.209 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC3154376733370617102_20260302085608139.mp4
+2026-03-02 14:26:08.213 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:08.216 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:08.381 +05:30 [INF] Received HTTP response headers after 163.5418ms - 200
+2026-03-02 14:26:08.386 +05:30 [INF] End processing HTTP request after 173.6342ms - 200
+2026-03-02 14:26:08.396 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:26:09.536 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC3154376733370617102_20260302085609510.mp4
+2026-03-02 14:26:09.541 +05:30 [INF] Video upload completed successfully.
+2026-03-02 14:26:09.544 +05:30 [INF] Executing OkObjectResult, writing value of type 'GpsMediaStamp.Web.Models.UploadResponse'.
+2026-03-02 14:26:09.549 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 2027.2595ms
+2026-03-02 14:26:09.552 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 14:26:09.556 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 2042.7722ms
+2026-03-02 14:26:15.879 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-FRrXS7+N.rAscGEOhilhpyE3VhwvZZOY_afBqQuOtApDCr+H1l0 245349
+2026-03-02 14:26:15.881 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:26:15.883 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:26:16.207 +05:30 [INF] Image upload started: CAP4825026950115613796.jpg
+2026-03-02 14:26:16.233 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP4825026950115613796_20260302085616212.jpg
+2026-03-02 14:26:16.237 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:16.238 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:16.488 +05:30 [INF] Received HTTP response headers after 249.2155ms - 200
+2026-03-02 14:26:16.511 +05:30 [INF] End processing HTTP request after 274.1637ms - 200
+2026-03-02 14:26:16.514 +05:30 [INF] Resolved Address: Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:26:16.640 +05:30 [INF] Image upload completed: CAP4825026950115613796.jpg
+2026-03-02 14:26:16.657 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:26:16.664 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 778.8318ms
+2026-03-02 14:26:16.669 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:26:16.672 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 792.6686ms
+2026-03-02 14:26:22.129 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-QI+_xDgMY8mzuhzYXSi5nlaAnVLLN+WRcNzWe7BWVhNzdHaPn0w 207257
+2026-03-02 14:26:22.131 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:26:22.132 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:26:22.230 +05:30 [INF] Image upload started: CAP7366300384226598410.jpg
+2026-03-02 14:26:22.255 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP7366300384226598410_20260302085622234.jpg
+2026-03-02 14:26:22.261 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:22.270 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:22.473 +05:30 [INF] Received HTTP response headers after 201.556ms - 200
+2026-03-02 14:26:22.478 +05:30 [INF] End processing HTTP request after 217.0125ms - 200
+2026-03-02 14:26:22.508 +05:30 [INF] Resolved Address: Shop No 14, Rakhee, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:26:22.654 +05:30 [INF] Image upload completed: CAP7366300384226598410.jpg
+2026-03-02 14:26:22.655 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:26:22.656 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 522.8778ms
+2026-03-02 14:26:22.657 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:26:22.659 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 529.9777ms
+2026-03-02 14:26:25.918 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-3qH6w07vlMzvxZ3JTsIj-nJT6PPWcS_ymYTwqCmy8nlpmJH4.Jt 217553
+2026-03-02 14:26:25.920 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:26:25.924 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:26:25.948 +05:30 [INF] Image upload started: CAP237063124480902348.jpg
+2026-03-02 14:26:25.971 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP237063124480902348_20260302085625951.jpg
+2026-03-02 14:26:25.979 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:25.986 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:26:26.320 +05:30 [INF] Received HTTP response headers after 328.7373ms - 200
+2026-03-02 14:26:26.323 +05:30 [INF] End processing HTTP request after 344.0043ms - 200
+2026-03-02 14:26:26.324 +05:30 [INF] Resolved Address: Shop No22 ,Umang Bldg, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:26:26.419 +05:30 [INF] Image upload completed: CAP237063124480902348.jpg
+2026-03-02 14:26:26.423 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:26:26.426 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 499.4722ms
+2026-03-02 14:26:26.430 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:26:26.431 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 513.7978ms
+2026-03-02 14:33:36.770 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-gw9h2TWokswCvGfog2nXB.ccfS30KzaenJERAdIEZzlS0Xfa6N+ 374214
+2026-03-02 14:33:36.817 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:33:36.818 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:33:36.898 +05:30 [INF] Image upload started: CAP8638504790569725765.jpg
+2026-03-02 14:33:36.928 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP8638504790569725765_20260302090336903.jpg
+2026-03-02 14:33:36.938 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:33:36.940 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:33:37.251 +05:30 [INF] Received HTTP response headers after 309.5268ms - 200
+2026-03-02 14:33:37.255 +05:30 [INF] End processing HTTP request after 317.0671ms - 200
+2026-03-02 14:33:37.316 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:33:37.602 +05:30 [INF] Image upload completed: CAP8638504790569725765.jpg
+2026-03-02 14:33:37.618 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:33:37.627 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 806.3103ms
+2026-03-02 14:33:37.629 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:33:37.634 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 863.9205ms
+2026-03-02 14:33:38.898 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-3Tr8YVP-A-E.Vnfz7U9lmdW5.QObOYULwhlqWWm+M3ts_rAEeCI 376694
+2026-03-02 14:33:38.929 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:33:38.943 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 14:33:38.972 +05:30 [INF] Image upload started: CAP8157997061944343891.jpg
+2026-03-02 14:33:39.001 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP8157997061944343891_20260302090338978.jpg
+2026-03-02 14:33:39.008 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:33:39.012 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:33:39.196 +05:30 [INF] Received HTTP response headers after 180.4335ms - 200
+2026-03-02 14:33:39.212 +05:30 [INF] End processing HTTP request after 204.0242ms - 200
+2026-03-02 14:33:39.236 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:33:39.442 +05:30 [INF] Image upload completed: CAP8157997061944343891.jpg
+2026-03-02 14:33:39.445 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 14:33:39.447 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 491.9087ms
+2026-03-02 14:33:39.451 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 14:33:39.456 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 557.9193ms
+2026-03-02 14:33:49.404 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-AkOe76vxDdqHQXvDwpntbmaPlX8tJnADNwKUGPoxo.1IdC4P_JO 10436284
+2026-03-02 14:33:49.417 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 14:33:49.423 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 14:33:51.040 +05:30 [INF] Video upload started: REC1331449768657488655.mp4
+2026-03-02 14:33:51.181 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC1331449768657488655_20260302090351043.mp4
+2026-03-02 14:33:51.187 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:33:51.191 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 14:33:51.393 +05:30 [INF] Received HTTP response headers after 199.7391ms - 200
+2026-03-02 14:33:51.424 +05:30 [INF] End processing HTTP request after 236.6223ms - 200
+2026-03-02 14:33:51.509 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 14:33:52.491 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC1331449768657488655_20260302090352411.mp4
+2026-03-02 14:33:52.504 +05:30 [INF] Video upload completed successfully.
+2026-03-02 14:33:52.515 +05:30 [INF] Executing OkObjectResult, writing value of type 'GpsMediaStamp.Web.Models.UploadResponse'.
+2026-03-02 14:33:52.520 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 3090.3526ms
+2026-03-02 14:33:52.525 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 14:33:52.534 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 3129.0545ms
+2026-03-02 15:51:58.240 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-slJ.3_-PKgQ.0nyx5HWh1urgRy3R9_m9KT7y_RcxkTIAzt+5VU3 417457
+2026-03-02 15:51:58.285 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 15:51:58.288 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 15:51:58.305 +05:30 [INF] Image upload started: CAP3337391825389323913.jpg
+2026-03-02 15:51:58.345 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP3337391825389323913_20260302102158307.jpg
+2026-03-02 15:51:58.355 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:51:58.357 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:51:58.600 +05:30 [INF] Received HTTP response headers after 239.6666ms - 200
+2026-03-02 15:51:58.615 +05:30 [INF] End processing HTTP request after 260.4343ms - 200
+2026-03-02 15:51:58.698 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 15:51:59.222 +05:30 [INF] Image upload completed: CAP3337391825389323913.jpg
+2026-03-02 15:51:59.225 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 15:51:59.227 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 934.1001ms
+2026-03-02 15:51:59.239 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 15:51:59.244 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1004.2151ms
+2026-03-02 15:52:05.314 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-X734oNtTPUZ.fvocgAfhQUA2Y+uY63GqtK.dVqV8FMLYlTKpVvS 368213
+2026-03-02 15:52:05.321 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 15:52:05.326 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 15:52:05.373 +05:30 [INF] Image upload started: CAP5026090865769437010.jpg
+2026-03-02 15:52:05.403 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP5026090865769437010_20260302102205377.jpg
+2026-03-02 15:52:05.415 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:52:05.423 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:52:05.612 +05:30 [INF] Received HTTP response headers after 177.688ms - 200
+2026-03-02 15:52:05.614 +05:30 [INF] End processing HTTP request after 198.9797ms - 200
+2026-03-02 15:52:05.766 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 15:52:06.189 +05:30 [INF] Image upload completed: CAP5026090865769437010.jpg
+2026-03-02 15:52:06.218 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 15:52:06.224 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 893.2909ms
+2026-03-02 15:52:06.228 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 15:52:06.230 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 916.5823ms
+2026-03-02 15:52:15.360 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-gP0Blh+2OK.gK.i60hPv-HPf4T.s+.6KYfNM44twL.zJQqEp7xU 5178911
+2026-03-02 15:52:15.404 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 15:52:15.405 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 15:52:19.598 +05:30 [INF] Video upload started: REC2198390650199547485.mp4
+2026-03-02 15:52:19.674 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC2198390650199547485_20260302102219605.mp4
+2026-03-02 15:52:19.681 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:52:19.682 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:52:19.873 +05:30 [INF] Received HTTP response headers after 189.3209ms - 200
+2026-03-02 15:52:19.882 +05:30 [INF] End processing HTTP request after 201.118ms - 200
+2026-03-02 15:52:19.931 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 15:52:21.030 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC2198390650199547485_20260302102220927.mp4
+2026-03-02 15:52:21.042 +05:30 [INF] Video upload completed successfully.
+2026-03-02 15:52:21.045 +05:30 [INF] Executing OkObjectResult, writing value of type 'GpsMediaStamp.Web.Models.UploadResponse'.
+2026-03-02 15:52:21.046 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 5638.1812ms
+2026-03-02 15:52:21.050 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 15:52:21.057 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 5697.0991ms
+2026-03-02 15:59:32.765 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.html - null null
+2026-03-02 15:59:32.830 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.html - 304 null null 72.2206ms
+2026-03-02 15:59:32.851 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - null null
+2026-03-02 15:59:32.857 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - null null
+2026-03-02 15:59:32.866 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.css - null null
+2026-03-02 15:59:32.855 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - null null
+2026-03-02 15:59:32.882 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui.css - 304 null null 30.4637ms
+2026-03-02 15:59:32.867 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-02 15:59:32.881 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/index.js - null null
+2026-03-02 15:59:32.908 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-bundle.js - 304 null null 53.5163ms
+2026-03-02 15:59:32.913 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.css - 304 null null 46.4855ms
+2026-03-02 15:59:32.919 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 64.099ms
+2026-03-02 15:59:32.924 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/_vs/browserLink - null null
+2026-03-02 15:59:32.927 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/swagger-ui-standalone-preset.js - 304 null null 59.9108ms
+2026-03-02 15:59:32.929 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/index.js - 304 null null 50.3493ms
+2026-03-02 15:59:33.072 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/_vs/browserLink - 200 null text/javascript; charset=UTF-8 147.9538ms
+2026-03-02 15:59:33.107 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - null null
+2026-03-02 15:59:33.121 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5039/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.8467ms
+2026-03-02 15:59:54.441 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5039/api/image/upload - multipart/form-data; boundary=----WebKitFormBoundaryQCId7az5ZdOB3LNE 184102
+2026-03-02 15:59:54.512 +05:30 [INF] CORS policy execution successful.
+2026-03-02 15:59:54.518 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 15:59:54.521 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 15:59:54.537 +05:30 [INF] Image upload started: nikita joshi.jpeg
+2026-03-02 15:59:54.564 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\nikita joshi_20260302102954543.jpeg
+2026-03-02 15:59:54.575 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:59:54.580 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 15:59:55.010 +05:30 [INF] Received HTTP response headers after 424.507ms - 200
+2026-03-02 15:59:55.021 +05:30 [INF] End processing HTTP request after 445.8158ms - 200
+2026-03-02 15:59:55.025 +05:30 [INF] Resolved Address: Padamati Somaram 508126
+Telangana, India
+2026-03-02 15:59:55.352 +05:30 [INF] Image upload completed: nikita joshi.jpeg
+2026-03-02 15:59:55.357 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 15:59:55.392 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 863.111ms
+2026-03-02 15:59:55.406 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 15:59:55.411 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5039/api/image/upload - 200 null application/json; charset=utf-8 970.2882ms
+2026-03-02 16:08:00.650 +05:30 [INF] User profile is available. Using 'C:\Users\ravin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-02 16:08:01.087 +05:30 [WRN] Overriding address(es) 'https://localhost:7124, http://0.0.0.0:5039'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-03-02 16:08:01.142 +05:30 [INF] Now listening on: http://[::]:5039
+2026-03-02 16:08:01.316 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-02 16:08:01.324 +05:30 [INF] Hosting environment: Development
+2026-03-02 16:08:01.325 +05:30 [INF] Content root path: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web
+2026-03-02 16:11:26.755 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-79G74Wue4-ZAkgbnNLe7ZYJl+um6q2LRhytw26-q_wyjEvp-ATM 361764
+2026-03-02 16:11:26.984 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:11:27.116 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:11:27.444 +05:30 [INF] Image upload started: CAP1561312546215289799.jpg
+2026-03-02 16:11:27.564 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP1561312546215289799_20260302104127466.jpg
+2026-03-02 16:11:28.107 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:11:28.124 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:11:28.864 +05:30 [INF] Received HTTP response headers after 726.0823ms - 200
+2026-03-02 16:11:28.874 +05:30 [INF] End processing HTTP request after 781.0948ms - 200
+2026-03-02 16:11:28.961 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:11:36.418 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:11:36.436 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:11:36.507 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 9369.355ms
+2026-03-02 16:11:36.515 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:11:36.541 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 9839.8977ms
+2026-03-02 16:11:36.691 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1561312546215289799_20260302104136405.jpg - null null
+2026-03-02 16:11:36.869 +05:30 [INF] Sending file. Request path: '/stamped/CAP1561312546215289799_20260302104136405.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP1561312546215289799_20260302104136405.jpg'
+2026-03-02 16:11:36.878 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1561312546215289799_20260302104136405.jpg - 200 327494 image/jpeg 190.4783ms
+2026-03-02 16:11:48.212 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-eF1NXTsXiv7mP.XHRaBYD_eQMghPThSFv48dLv1Ssbk4chS.fOc 396643
+2026-03-02 16:11:48.250 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:11:48.253 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:11:48.388 +05:30 [INF] Image upload started: CAP5395839873514565409.jpg
+2026-03-02 16:11:48.438 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP5395839873514565409_20260302104148394.jpg
+2026-03-02 16:11:48.461 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:11:48.466 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:11:48.667 +05:30 [INF] Received HTTP response headers after 195.5853ms - 200
+2026-03-02 16:11:48.672 +05:30 [INF] End processing HTTP request after 211.2681ms - 200
+2026-03-02 16:11:48.694 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:11:49.403 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:11:49.429 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:11:49.442 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 1181.8773ms
+2026-03-02 16:11:49.462 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:11:49.473 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1261.1373ms
+2026-03-02 16:11:49.492 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP5395839873514565409_20260302104149390.jpg - null null
+2026-03-02 16:11:49.561 +05:30 [INF] Sending file. Request path: '/stamped/CAP5395839873514565409_20260302104149390.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP5395839873514565409_20260302104149390.jpg'
+2026-03-02 16:11:49.583 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP5395839873514565409_20260302104149390.jpg - 200 358442 image/jpeg 90.9089ms
+2026-03-02 16:12:00.807 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-c8u0-v3rmAUQPguRp9Nn6wd-rNTAJVDmAmi8vj7dCtyv-E-ubY6 11263247
+2026-03-02 16:12:00.845 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:12:00.874 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:12:01.867 +05:30 [INF] Video upload started: REC7321811938223882639.mp4
+2026-03-02 16:12:02.110 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC7321811938223882639_20260302104201880.mp4
+2026-03-02 16:12:02.128 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:02.137 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:02.331 +05:30 [INF] Received HTTP response headers after 188.7043ms - 200
+2026-03-02 16:12:02.339 +05:30 [INF] End processing HTTP request after 211.0006ms - 200
+2026-03-02 16:12:02.440 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:12:04.135 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7321811938223882639_20260302104203989.mp4
+2026-03-02 16:12:04.143 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:12:04.147 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:12:04.159 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 3277.3531ms
+2026-03-02 16:12:04.174 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:12:04.184 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 3377.4191ms
+2026-03-02 16:12:04.201 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC7321811938223882639_20260302104203989.mp4 - null null
+2026-03-02 16:12:04.541 +05:30 [INF] Sending file. Request path: '/stamped/REC7321811938223882639_20260302104203989.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7321811938223882639_20260302104203989.mp4'
+2026-03-02 16:12:04.633 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC7321811938223882639_20260302104203989.mp4 - 200 5374589 video/mp4 432.6463ms
+2026-03-02 16:12:11.587 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-9pzLYCUK-s9Vxsh+T5ahlDKaO+9sHjz7WUmV-j38Vf2hDOKs-g+ 387606
+2026-03-02 16:12:11.631 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:11.659 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:12:11.713 +05:30 [INF] Image upload started: CAP8511837414344614660.jpg
+2026-03-02 16:12:11.752 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP8511837414344614660_20260302104211717.jpg
+2026-03-02 16:12:11.767 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:11.777 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:11.943 +05:30 [INF] Received HTTP response headers after 158.9364ms - 200
+2026-03-02 16:12:11.952 +05:30 [INF] End processing HTTP request after 185.1493ms - 200
+2026-03-02 16:12:11.989 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:12:12.553 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:12:12.580 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:12:12.594 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 927.716ms
+2026-03-02 16:12:12.599 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:12.603 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1016.0518ms
+2026-03-02 16:12:12.626 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP8511837414344614660_20260302104212542.jpg - null null
+2026-03-02 16:12:12.694 +05:30 [INF] Sending file. Request path: '/stamped/CAP8511837414344614660_20260302104212542.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP8511837414344614660_20260302104212542.jpg'
+2026-03-02 16:12:12.714 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP8511837414344614660_20260302104212542.jpg - 200 352361 image/jpeg 87.4767ms
+2026-03-02 16:12:17.209 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-3Jnu8ktNsAla80+ZlYdSrt.cUX7bN7R9-hU-sYR6NxO4d8Vy8DG 410362
+2026-03-02 16:12:17.235 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:17.246 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:12:17.294 +05:30 [INF] Image upload started: CAP9154301276418434527.jpg
+2026-03-02 16:12:17.382 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP9154301276418434527_20260302104217299.jpg
+2026-03-02 16:12:17.432 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:17.464 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:17.682 +05:30 [INF] Received HTTP response headers after 208.505ms - 200
+2026-03-02 16:12:17.807 +05:30 [INF] End processing HTTP request after 375.6699ms - 200
+2026-03-02 16:12:17.933 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:12:18.644 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:12:18.688 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:12:18.731 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 1465.4816ms
+2026-03-02 16:12:18.754 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:18.833 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1623.7206ms
+2026-03-02 16:12:18.871 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP9154301276418434527_20260302104218605.jpg - null null
+2026-03-02 16:12:19.418 +05:30 [INF] Sending file. Request path: '/stamped/CAP9154301276418434527_20260302104218605.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP9154301276418434527_20260302104218605.jpg'
+2026-03-02 16:12:19.434 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP9154301276418434527_20260302104218605.jpg - 200 379872 image/jpeg 562.7893ms
+2026-03-02 16:12:20.222 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-XIt6wy._J9YJQpMnbxHSb.vuHKsdznGhcU1paolN6YcTN5wkXrW 381463
+2026-03-02 16:12:20.281 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:20.299 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:12:20.341 +05:30 [INF] Image upload started: CAP3155425080382578697.jpg
+2026-03-02 16:12:20.389 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP3155425080382578697_20260302104220353.jpg
+2026-03-02 16:12:20.448 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:20.457 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:20.608 +05:30 [INF] Received HTTP response headers after 147.4111ms - 200
+2026-03-02 16:12:20.617 +05:30 [INF] End processing HTTP request after 169.7214ms - 200
+2026-03-02 16:12:20.687 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:12:21.080 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:12:21.086 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:12:21.091 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 781.4292ms
+2026-03-02 16:12:21.108 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:21.113 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 891.6926ms
+2026-03-02 16:12:21.213 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP3155425080382578697_20260302104221067.jpg - null null
+2026-03-02 16:12:21.422 +05:30 [INF] Sending file. Request path: '/stamped/CAP3155425080382578697_20260302104221067.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP3155425080382578697_20260302104221067.jpg'
+2026-03-02 16:12:21.429 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP3155425080382578697_20260302104221067.jpg - 200 351868 image/jpeg 216.2713ms
+2026-03-02 16:12:22.717 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-VcPXeMEC3f54I-XA.MgORZb+WNcBTKXTBx1Q25uNb0GjdwIRjxW 407086
+2026-03-02 16:12:22.767 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:22.772 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:12:22.821 +05:30 [INF] Image upload started: CAP6279580990562305466.jpg
+2026-03-02 16:12:22.862 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP6279580990562305466_20260302104222829.jpg
+2026-03-02 16:12:22.877 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:22.886 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:12:23.017 +05:30 [INF] Received HTTP response headers after 125.3721ms - 200
+2026-03-02 16:12:23.022 +05:30 [INF] End processing HTTP request after 145.3388ms - 200
+2026-03-02 16:12:23.043 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:12:23.555 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:12:23.582 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:12:23.613 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 833.8863ms
+2026-03-02 16:12:23.636 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:12:23.646 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 929.5604ms
+2026-03-02 16:12:23.669 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP6279580990562305466_20260302104223543.jpg - null null
+2026-03-02 16:12:23.793 +05:30 [INF] Sending file. Request path: '/stamped/CAP6279580990562305466_20260302104223543.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP6279580990562305466_20260302104223543.jpg'
+2026-03-02 16:12:23.908 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP6279580990562305466_20260302104223543.jpg - 200 376980 image/jpeg 239.1994ms
+2026-03-02 16:25:51.726 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-Thl_0lKZOMjsdGC30w7m.fjMVQTPd+s+uI8qHucRir0hoTzHwFh 368707
+2026-03-02 16:25:51.759 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:25:51.788 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:25:51.845 +05:30 [INF] Image upload started: CAP8179555367932629222.jpg
+2026-03-02 16:25:51.891 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP8179555367932629222_20260302105551849.jpg
+2026-03-02 16:25:51.917 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:25:51.926 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:25:52.210 +05:30 [INF] Received HTTP response headers after 280.0404ms - 200
+2026-03-02 16:25:52.217 +05:30 [INF] End processing HTTP request after 300.1954ms - 200
+2026-03-02 16:25:52.263 +05:30 [INF] Resolved Address: Mumbai
+Maharashtra, India
+2026-03-02 16:25:52.635 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:25:52.644 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:25:52.655 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 851.9867ms
+2026-03-02 16:25:52.661 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:25:52.667 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 941.9724ms
+2026-03-02 16:25:52.753 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP8179555367932629222_20260302105552625.jpg - null null
+2026-03-02 16:25:52.863 +05:30 [INF] Sending file. Request path: '/stamped/CAP8179555367932629222_20260302105552625.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP8179555367932629222_20260302105552625.jpg'
+2026-03-02 16:25:52.892 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP8179555367932629222_20260302105552625.jpg - 200 335564 image/jpeg 139.0732ms
+2026-03-02 16:25:56.943 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-dhqKwmHn_M.ciMpfkR_bbDyD-HXPhfK.PwT68KaNjODgGzOFT+Z 366278
+2026-03-02 16:25:56.958 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:25:56.962 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:25:57.015 +05:30 [INF] Image upload started: CAP2471409618150981449.jpg
+2026-03-02 16:25:57.054 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP2471409618150981449_20260302105557020.jpg
+2026-03-02 16:25:57.087 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:25:57.098 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:25:57.277 +05:30 [INF] Received HTTP response headers after 172.832ms - 200
+2026-03-02 16:25:57.280 +05:30 [INF] End processing HTTP request after 192.5993ms - 200
+2026-03-02 16:25:57.401 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:25:57.761 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:25:57.774 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:25:57.786 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 817.4763ms
+2026-03-02 16:25:57.796 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:25:57.807 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 864.1164ms
+2026-03-02 16:25:57.825 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP2471409618150981449_20260302105557744.jpg - null null
+2026-03-02 16:25:57.879 +05:30 [INF] Sending file. Request path: '/stamped/CAP2471409618150981449_20260302105557744.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP2471409618150981449_20260302105557744.jpg'
+2026-03-02 16:25:57.899 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP2471409618150981449_20260302105557744.jpg - 200 344784 image/jpeg 74.0487ms
+2026-03-02 16:26:12.736 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-vN6zFP4MOdKPocEU.2x76clwW7lSDPYnxNl-ojWX97tTdofu9t9 14279298
+2026-03-02 16:26:12.770 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:26:12.778 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:26:14.548 +05:30 [INF] Video upload started: REC4988523053390694415.mp4
+2026-03-02 16:26:14.808 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC4988523053390694415_20260302105614556.mp4
+2026-03-02 16:26:14.824 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:26:14.832 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:26:15.032 +05:30 [INF] Received HTTP response headers after 190.9984ms - 200
+2026-03-02 16:26:15.056 +05:30 [INF] End processing HTTP request after 231.7896ms - 200
+2026-03-02 16:26:15.096 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:26:17.859 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC4988523053390694415_20260302105617753.mp4
+2026-03-02 16:26:17.868 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:26:17.873 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:26:17.886 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 5098.6768ms
+2026-03-02 16:26:17.898 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:26:17.909 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 5173.9223ms
+2026-03-02 16:26:17.922 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC4988523053390694415_20260302105617753.mp4 - null null
+2026-03-02 16:26:18.322 +05:30 [INF] Sending file. Request path: '/stamped/REC4988523053390694415_20260302105617753.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC4988523053390694415_20260302105617753.mp4'
+2026-03-02 16:26:18.327 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC4988523053390694415_20260302105617753.mp4 - 200 5789679 video/mp4 404.3915ms
+2026-03-02 16:40:48.658 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-1uNsnb3XHIVNc6Jpp7KgoIeBPFqjHSUfNJQ5xlMTiL7DSA9VvZO 338765
+2026-03-02 16:40:48.670 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:40:48.727 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:40:48.766 +05:30 [INF] Image upload started: CAP5872028008721956411.jpg
+2026-03-02 16:40:48.809 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP5872028008721956411_20260302111048772.jpg
+2026-03-02 16:40:48.828 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:40:48.833 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:40:49.075 +05:30 [INF] Received HTTP response headers after 237.3592ms - 200
+2026-03-02 16:40:49.086 +05:30 [INF] End processing HTTP request after 258.1907ms - 200
+2026-03-02 16:40:49.135 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:40:49.592 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:40:49.625 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:40:49.642 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 900.5744ms
+2026-03-02 16:40:49.666 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:40:49.673 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1015.1393ms
+2026-03-02 16:40:49.736 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP5872028008721956411_20260302111049578.jpg - null null
+2026-03-02 16:40:49.805 +05:30 [INF] Sending file. Request path: '/stamped/CAP5872028008721956411_20260302111049578.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP5872028008721956411_20260302111049578.jpg'
+2026-03-02 16:40:49.832 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP5872028008721956411_20260302111049578.jpg - 200 334648 image/jpeg 96.3462ms
+2026-03-02 16:40:57.146 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-5wCyWmhdP.OYjWc.SxRLhuujygkusLJpqseWFQSzGGS7T2oebJN 7465576
+2026-03-02 16:40:57.160 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:40:57.167 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:40:57.728 +05:30 [INF] Video upload started: REC7052599710571778347.mp4
+2026-03-02 16:40:57.911 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC7052599710571778347_20260302111057738.mp4
+2026-03-02 16:40:57.930 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:40:57.940 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:40:58.090 +05:30 [INF] Received HTTP response headers after 140.7115ms - 200
+2026-03-02 16:40:58.126 +05:30 [INF] End processing HTTP request after 195.9373ms - 200
+2026-03-02 16:40:58.154 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:40:59.138 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7052599710571778347_20260302111059030.mp4
+2026-03-02 16:40:59.152 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:40:59.164 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:40:59.169 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 1990.7232ms
+2026-03-02 16:40:59.225 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:40:59.240 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 2093.9196ms
+2026-03-02 16:40:59.258 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC7052599710571778347_20260302111059030.mp4 - null null
+2026-03-02 16:40:59.516 +05:30 [INF] Sending file. Request path: '/stamped/REC7052599710571778347_20260302111059030.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7052599710571778347_20260302111059030.mp4'
+2026-03-02 16:40:59.523 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC7052599710571778347_20260302111059030.mp4 - 200 2407194 video/mp4 264.8188ms
+2026-03-02 16:40:59.703 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-BubzcX8h4.QrpjRjRbrHyZ2e-jf_6qqD1F-yPK4CJEgYar5mSRm 322076
+2026-03-02 16:40:59.800 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:40:59.810 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:40:59.851 +05:30 [INF] Image upload started: CAP6480605891948619249.jpg
+2026-03-02 16:40:59.906 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP6480605891948619249_20260302111059861.jpg
+2026-03-02 16:40:59.922 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:40:59.928 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:00.115 +05:30 [INF] Received HTTP response headers after 179.1982ms - 200
+2026-03-02 16:41:00.177 +05:30 [INF] End processing HTTP request after 255.3186ms - 200
+2026-03-02 16:41:00.184 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:00.565 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:41:00.573 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:00.578 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 755.1342ms
+2026-03-02 16:41:00.586 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:41:00.590 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 887.5718ms
+2026-03-02 16:41:00.606 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP6480605891948619249_20260302111100557.jpg - null null
+2026-03-02 16:41:00.649 +05:30 [INF] Sending file. Request path: '/stamped/CAP6480605891948619249_20260302111100557.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP6480605891948619249_20260302111100557.jpg'
+2026-03-02 16:41:00.666 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP6480605891948619249_20260302111100557.jpg - 200 313628 image/jpeg 60.3302ms
+2026-03-02 16:41:02.743 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-k45JquDTkMC8PMGT_Pz_a+qcQSXr3A4xc7+Bhxp8YaLddKS_Kdq 330203
+2026-03-02 16:41:02.759 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:41:02.766 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:41:02.828 +05:30 [INF] Image upload started: CAP1433758061690573808.jpg
+2026-03-02 16:41:02.868 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP1433758061690573808_20260302111102833.jpg
+2026-03-02 16:41:02.885 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:02.890 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:03.029 +05:30 [INF] Received HTTP response headers after 133.5843ms - 200
+2026-03-02 16:41:03.035 +05:30 [INF] End processing HTTP request after 150.3937ms - 200
+2026-03-02 16:41:03.099 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:03.435 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:41:03.444 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:03.456 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 684.7482ms
+2026-03-02 16:41:03.462 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:41:03.468 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 725.0064ms
+2026-03-02 16:41:03.529 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1433758061690573808_20260302111103425.jpg - null null
+2026-03-02 16:41:03.564 +05:30 [INF] Sending file. Request path: '/stamped/CAP1433758061690573808_20260302111103425.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP1433758061690573808_20260302111103425.jpg'
+2026-03-02 16:41:03.571 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1433758061690573808_20260302111103425.jpg - 200 321246 image/jpeg 42.2601ms
+2026-03-02 16:41:14.154 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-hRr8S-e8nqCNgfkDz15c1K8N6oB5U1e+kMCzFT.xGaudEj49EJw 13332471
+2026-03-02 16:41:14.173 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:14.189 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:41:15.252 +05:30 [INF] Video upload started: REC1483202377465883588.mp4
+2026-03-02 16:41:15.559 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC1483202377465883588_20260302111115258.mp4
+2026-03-02 16:41:15.586 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:15.595 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:15.692 +05:30 [INF] Received HTTP response headers after 93.5151ms - 200
+2026-03-02 16:41:15.697 +05:30 [INF] End processing HTTP request after 111.4318ms - 200
+2026-03-02 16:41:15.760 +05:30 [INF] Resolved Address: Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:16.842 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC1483202377465883588_20260302111116630.mp4
+2026-03-02 16:41:16.858 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:41:16.875 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:16.888 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 2690.2282ms
+2026-03-02 16:41:16.900 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:16.914 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 2759.5141ms
+2026-03-02 16:41:16.944 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC1483202377465883588_20260302111116630.mp4 - null null
+2026-03-02 16:41:17.656 +05:30 [INF] Sending file. Request path: '/stamped/REC1483202377465883588_20260302111116630.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC1483202377465883588_20260302111116630.mp4'
+2026-03-02 16:41:17.670 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC1483202377465883588_20260302111116630.mp4 - 200 4151041 video/mp4 725.8485ms
+2026-03-02 16:41:23.339 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-Kt8-Z.j.MaOyVb_sVpy_L60inN8R2TvLqS3.9PQ9uGIOsj-CvAU 10244966
+2026-03-02 16:41:23.436 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:23.456 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:41:24.203 +05:30 [INF] Video upload started: REC2366545877818399722.mp4
+2026-03-02 16:41:24.416 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC2366545877818399722_20260302111124215.mp4
+2026-03-02 16:41:24.446 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:24.452 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:24.671 +05:30 [INF] Received HTTP response headers after 215.394ms - 200
+2026-03-02 16:41:24.697 +05:30 [INF] End processing HTTP request after 251.1779ms - 200
+2026-03-02 16:41:24.716 +05:30 [INF] Resolved Address: I Wing
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:25.905 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC2366545877818399722_20260302111125807.mp4
+2026-03-02 16:41:25.924 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:41:25.931 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:25.942 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 2438.0324ms
+2026-03-02 16:41:25.956 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:25.961 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 2622.0948ms
+2026-03-02 16:41:25.981 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC2366545877818399722_20260302111125807.mp4 - null null
+2026-03-02 16:41:26.382 +05:30 [INF] Sending file. Request path: '/stamped/REC2366545877818399722_20260302111125807.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC2366545877818399722_20260302111125807.mp4'
+2026-03-02 16:41:26.421 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC2366545877818399722_20260302111125807.mp4 - 200 3357993 video/mp4 439.241ms
+2026-03-02 16:41:26.771 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-ecRSxm17yxxPDIX7JBGWltB81u4Wj.LB.dRbiizZZpBwrW_R_M+ 334558
+2026-03-02 16:41:26.849 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:41:26.856 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:41:26.905 +05:30 [INF] Image upload started: CAP2288530794243614395.jpg
+2026-03-02 16:41:26.956 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP2288530794243614395_20260302111126912.jpg
+2026-03-02 16:41:26.974 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:26.979 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:27.190 +05:30 [INF] Received HTTP response headers after 203.8158ms - 200
+2026-03-02 16:41:27.194 +05:30 [INF] End processing HTTP request after 220.0632ms - 200
+2026-03-02 16:41:27.289 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:27.698 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:41:27.704 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:27.710 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 843.3829ms
+2026-03-02 16:41:27.718 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:41:27.723 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 952.183ms
+2026-03-02 16:41:27.784 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP2288530794243614395_20260302111127689.jpg - null null
+2026-03-02 16:41:27.825 +05:30 [INF] Sending file. Request path: '/stamped/CAP2288530794243614395_20260302111127689.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP2288530794243614395_20260302111127689.jpg'
+2026-03-02 16:41:27.831 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP2288530794243614395_20260302111127689.jpg - 200 327716 image/jpeg 47.0476ms
+2026-03-02 16:41:37.204 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-DZCv0gFtWgq1oYJqJ545pI4WpgLdRAyRgcMV1nd1rP1RE5jov2D 9519756
+2026-03-02 16:41:37.267 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:37.275 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:41:38.059 +05:30 [INF] Video upload started: REC5270637880343493761.mp4
+2026-03-02 16:41:38.314 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC5270637880343493761_20260302111138069.mp4
+2026-03-02 16:41:38.333 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:38.344 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:38.507 +05:30 [INF] Received HTTP response headers after 138.1728ms - 200
+2026-03-02 16:41:38.536 +05:30 [INF] End processing HTTP request after 202.7189ms - 200
+2026-03-02 16:41:38.564 +05:30 [INF] Resolved Address: I Wing
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:39.677 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC5270637880343493761_20260302111139468.mp4
+2026-03-02 16:41:39.702 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:41:39.710 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:39.722 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 2431.7577ms
+2026-03-02 16:41:39.736 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:39.754 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 2550.3534ms
+2026-03-02 16:41:39.763 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC5270637880343493761_20260302111139468.mp4 - null null
+2026-03-02 16:41:40.131 +05:30 [INF] Sending file. Request path: '/stamped/REC5270637880343493761_20260302111139468.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC5270637880343493761_20260302111139468.mp4'
+2026-03-02 16:41:40.146 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC5270637880343493761_20260302111139468.mp4 - 200 3138976 video/mp4 383.248ms
+2026-03-02 16:41:46.187 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - multipart/form-data; boundary=dart-http-boundary-Kaq7mSih+qTzvAx3phTyobNPyhlUYE0W+v8F6Nbc-Izqqy6L-Y3 11892922
+2026-03-02 16:41:46.210 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:46.232 +05:30 [INF] Route matched with {action = "Upload", controller = "Media", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Upload(GpsMediaStamp.Web.Models.UploadVideoRequest) on controller GpsMediaStamp.Web.Controllers.MediaController (GpsMediaStamp.Web).
+2026-03-02 16:41:47.084 +05:30 [INF] Video upload started: REC7030606016234862958.mp4
+2026-03-02 16:41:47.355 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\REC7030606016234862958_20260302111147089.mp4
+2026-03-02 16:41:47.373 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:47.379 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:41:47.520 +05:30 [INF] Received HTTP response headers after 138.2391ms - 200
+2026-03-02 16:41:47.524 +05:30 [INF] End processing HTTP request after 151.4996ms - 200
+2026-03-02 16:41:47.620 +05:30 [INF] Resolved Address: I Wing
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:41:48.838 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7030606016234862958_20260302111148566.mp4
+2026-03-02 16:41:48.848 +05:30 [INF] Video upload completed successfully.
+2026-03-02 16:41:48.851 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:41:48.867 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web) in 2584.7562ms
+2026-03-02 16:41:48.929 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.MediaController.Upload (GpsMediaStamp.Web)'
+2026-03-02 16:41:48.951 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/video/upload - 200 null application/json; charset=utf-8 2763.242ms
+2026-03-02 16:41:48.993 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC7030606016234862958_20260302111148566.mp4 - null null
+2026-03-02 16:41:49.423 +05:30 [INF] Sending file. Request path: '/stamped/REC7030606016234862958_20260302111148566.mp4'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\REC7030606016234862958_20260302111148566.mp4'
+2026-03-02 16:41:49.439 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/REC7030606016234862958_20260302111148566.mp4 - 200 3804215 video/mp4 445.773ms
+2026-03-02 16:56:28.293 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-I4MoHr+a4bSUNViL_BVrfX.gg..BZlQ7XFAiefhj._C-.kfzISh 388918
+2026-03-02 16:56:28.316 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:28.354 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:56:28.406 +05:30 [INF] Image upload started: CAP5980849224811680352.jpg
+2026-03-02 16:56:28.474 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP5980849224811680352_20260302112628426.jpg
+2026-03-02 16:56:28.490 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:28.496 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:28.758 +05:30 [INF] Received HTTP response headers after 255.4544ms - 200
+2026-03-02 16:56:28.771 +05:30 [INF] End processing HTTP request after 280.1546ms - 200
+2026-03-02 16:56:28.892 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:56:29.240 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:56:29.243 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:56:29.248 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 867.9631ms
+2026-03-02 16:56:29.256 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:29.262 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 969.2626ms
+2026-03-02 16:56:29.343 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP5980849224811680352_20260302112629232.jpg - null null
+2026-03-02 16:56:29.448 +05:30 [INF] Sending file. Request path: '/stamped/CAP5980849224811680352_20260302112629232.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP5980849224811680352_20260302112629232.jpg'
+2026-03-02 16:56:29.462 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP5980849224811680352_20260302112629232.jpg - 200 358365 image/jpeg 118.7653ms
+2026-03-02 16:56:33.169 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-Q-ATr-UVmB1UALHAqEG_7VJoDd4ib-epQIjSjrOw90lsWUNFgJx 384286
+2026-03-02 16:56:33.172 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:33.173 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:56:33.242 +05:30 [INF] Image upload started: CAP580935475212165851.jpg
+2026-03-02 16:56:33.280 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP580935475212165851_20260302112633246.jpg
+2026-03-02 16:56:33.297 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:33.301 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:33.522 +05:30 [INF] Received HTTP response headers after 216.2709ms - 200
+2026-03-02 16:56:33.538 +05:30 [INF] End processing HTTP request after 240.8883ms - 200
+2026-03-02 16:56:33.576 +05:30 [INF] Resolved Address: Mumbai
+Maharashtra, India
+2026-03-02 16:56:33.892 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:56:33.899 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:56:33.912 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 736.2012ms
+2026-03-02 16:56:33.918 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:33.922 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 753.1301ms
+2026-03-02 16:56:33.934 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP580935475212165851_20260302112633884.jpg - null null
+2026-03-02 16:56:33.994 +05:30 [INF] Sending file. Request path: '/stamped/CAP580935475212165851_20260302112633884.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP580935475212165851_20260302112633884.jpg'
+2026-03-02 16:56:33.999 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP580935475212165851_20260302112633884.jpg - 200 343904 image/jpeg 65.2198ms
+2026-03-02 16:56:37.616 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-BSeUVUkIsXHd1zOeSHXM2+i3LPejTEx3lsb1fnCZoGxo42kIsRm 385512
+2026-03-02 16:56:37.619 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:37.620 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:56:37.660 +05:30 [INF] Image upload started: CAP1218771106775474480.jpg
+2026-03-02 16:56:37.702 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP1218771106775474480_20260302112637668.jpg
+2026-03-02 16:56:37.722 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:37.725 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:37.878 +05:30 [INF] Received HTTP response headers after 148.8239ms - 200
+2026-03-02 16:56:37.880 +05:30 [INF] End processing HTTP request after 158.2821ms - 200
+2026-03-02 16:56:37.932 +05:30 [INF] Resolved Address: Mumbai
+Maharashtra, India
+2026-03-02 16:56:38.290 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:56:38.294 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:56:38.300 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 666.4979ms
+2026-03-02 16:56:38.304 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:38.309 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 693.5726ms
+2026-03-02 16:56:38.324 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1218771106775474480_20260302112638281.jpg - null null
+2026-03-02 16:56:38.364 +05:30 [INF] Sending file. Request path: '/stamped/CAP1218771106775474480_20260302112638281.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP1218771106775474480_20260302112638281.jpg'
+2026-03-02 16:56:38.368 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1218771106775474480_20260302112638281.jpg - 200 346069 image/jpeg 44.0226ms
+2026-03-02 16:56:59.636 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-gqesc1uSd.NBvk2zgLOiwhLpBid5KwBFjv6dp8QVCuwM_VBhtim 388877
+2026-03-02 16:56:59.639 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:56:59.647 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 16:56:59.701 +05:30 [INF] Image upload started: CAP6688905657294754770.jpg
+2026-03-02 16:56:59.763 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP6688905657294754770_20260302112659711.jpg
+2026-03-02 16:56:59.796 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:56:59.804 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 16:57:00.004 +05:30 [INF] Received HTTP response headers after 193.0541ms - 200
+2026-03-02 16:57:00.032 +05:30 [INF] End processing HTTP request after 235.7709ms - 200
+2026-03-02 16:57:00.127 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 16:57:00.503 +05:30 [INF] Image upload completed successfully.
+2026-03-02 16:57:00.520 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 16:57:00.536 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 859.4989ms
+2026-03-02 16:57:00.553 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 16:57:00.585 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 948.4797ms
+2026-03-02 16:57:00.600 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP6688905657294754770_20260302112700494.jpg - null null
+2026-03-02 16:57:00.655 +05:30 [INF] Sending file. Request path: '/stamped/CAP6688905657294754770_20260302112700494.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP6688905657294754770_20260302112700494.jpg'
+2026-03-02 16:57:00.664 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP6688905657294754770_20260302112700494.jpg - 200 360257 image/jpeg 63.0785ms
+2026-03-02 17:12:43.337 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-H8Zvve8khGZlswv7DUHDfx2PTuS3VmowM3t6ryUVskKnQh_c4kK 382870
+2026-03-02 17:12:43.346 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:12:43.388 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:12:43.430 +05:30 [INF] Image upload started: CAP391922824956478966.jpg
+2026-03-02 17:12:43.462 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP391922824956478966_20260302114243433.jpg
+2026-03-02 17:12:43.475 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:12:43.480 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:12:44.038 +05:30 [INF] Received HTTP response headers after 556.5976ms - 200
+2026-03-02 17:12:44.048 +05:30 [INF] End processing HTTP request after 573.6665ms - 200
+2026-03-02 17:12:44.081 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:12:44.489 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:12:44.498 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:12:44.507 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 1098.5685ms
+2026-03-02 17:12:44.512 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:12:44.516 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 1178.9272ms
+2026-03-02 17:12:44.632 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP391922824956478966_20260302114244480.jpg - null null
+2026-03-02 17:12:44.678 +05:30 [INF] Sending file. Request path: '/stamped/CAP391922824956478966_20260302114244480.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP391922824956478966_20260302114244480.jpg'
+2026-03-02 17:12:44.694 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP391922824956478966_20260302114244480.jpg - 200 356201 image/jpeg 62.2005ms
+2026-03-02 17:12:47.840 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-+1GhQYYAu_f-ljzoMW80JivJjp-T6S.QaGWyhVjkag68hiFKtgs 367058
+2026-03-02 17:12:47.856 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:12:47.892 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:12:48.010 +05:30 [INF] Image upload started: CAP7006289597363075073.jpg
+2026-03-02 17:12:48.054 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP7006289597363075073_20260302114248019.jpg
+2026-03-02 17:12:48.074 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:12:48.077 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:12:48.218 +05:30 [INF] Received HTTP response headers after 135.9706ms - 200
+2026-03-02 17:12:48.221 +05:30 [INF] End processing HTTP request after 147.3247ms - 200
+2026-03-02 17:12:48.275 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:12:48.658 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:12:48.687 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:12:48.704 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 797.7788ms
+2026-03-02 17:12:48.770 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:12:48.825 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 984.0939ms
+2026-03-02 17:12:48.862 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP7006289597363075073_20260302114248648.jpg - null null
+2026-03-02 17:12:49.092 +05:30 [INF] Sending file. Request path: '/stamped/CAP7006289597363075073_20260302114248648.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP7006289597363075073_20260302114248648.jpg'
+2026-03-02 17:12:49.200 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP7006289597363075073_20260302114248648.jpg - 200 336809 image/jpeg 337.4047ms
+2026-03-02 17:13:12.067 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-ianw-n3H9nuViTCRAKCZ-7mWVW7mNj22zf0zeTTB6utZu5uJvWK 388015
+2026-03-02 17:13:12.125 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:13:12.128 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:13:12.165 +05:30 [INF] Image upload started: CAP321023497679049094.jpg
+2026-03-02 17:13:12.201 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP321023497679049094_20260302114312170.jpg
+2026-03-02 17:13:12.214 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:13:12.220 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:13:12.646 +05:30 [INF] Received HTTP response headers after 423.2501ms - 200
+2026-03-02 17:13:12.652 +05:30 [INF] End processing HTTP request after 437.694ms - 200
+2026-03-02 17:13:12.659 +05:30 [INF] Resolved Address: Mumbai
+Maharashtra, India
+2026-03-02 17:13:12.992 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:13:13.004 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:13:13.016 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 876.0105ms
+2026-03-02 17:13:13.022 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:13:13.027 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 959.5118ms
+2026-03-02 17:13:13.041 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP321023497679049094_20260302114312980.jpg - null null
+2026-03-02 17:13:13.102 +05:30 [INF] Sending file. Request path: '/stamped/CAP321023497679049094_20260302114312980.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP321023497679049094_20260302114312980.jpg'
+2026-03-02 17:13:13.107 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP321023497679049094_20260302114312980.jpg - 200 347994 image/jpeg 65.8842ms
+2026-03-02 17:29:26.809 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-4eArcpZ_KGVLj0E2a5d+2Nwyd14nlxU4SPnjaTdgwFY60Dzf4Hy 332270
+2026-03-02 17:29:26.817 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:26.827 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:29:26.899 +05:30 [INF] Image upload started: CAP1089546526386900858.jpg
+2026-03-02 17:29:26.950 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP1089546526386900858_20260302115926904.jpg
+2026-03-02 17:29:26.976 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:26.982 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:27.258 +05:30 [INF] Received HTTP response headers after 272.1268ms - 200
+2026-03-02 17:29:27.331 +05:30 [INF] End processing HTTP request after 354.5435ms - 200
+2026-03-02 17:29:27.360 +05:30 [INF] Resolved Address: Vasant Utsav Cooperative Housing Society Rakhee-E
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:29:27.724 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:29:27.732 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:29:27.751 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 872.004ms
+2026-03-02 17:29:27.760 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:27.767 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 958.2219ms
+2026-03-02 17:29:27.835 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1089546526386900858_20260302115927713.jpg - null null
+2026-03-02 17:29:27.904 +05:30 [INF] Sending file. Request path: '/stamped/CAP1089546526386900858_20260302115927713.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP1089546526386900858_20260302115927713.jpg'
+2026-03-02 17:29:27.918 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP1089546526386900858_20260302115927713.jpg - 200 323428 image/jpeg 83.0171ms
+2026-03-02 17:29:45.807 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-3CD9UIwJsMi0B4Ot98ZWsJa0LcSskX+Vc76M3G+-duXoPszciU8 324766
+2026-03-02 17:29:45.823 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:45.827 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:29:45.864 +05:30 [INF] Image upload started: CAP3509133024664029486.jpg
+2026-03-02 17:29:45.898 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP3509133024664029486_20260302115945869.jpg
+2026-03-02 17:29:45.913 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:45.918 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:46.112 +05:30 [INF] Received HTTP response headers after 189.9422ms - 200
+2026-03-02 17:29:46.118 +05:30 [INF] End processing HTTP request after 204.3322ms - 200
+2026-03-02 17:29:46.131 +05:30 [INF] Resolved Address: Shop No22 ,Umang Bldg, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:29:46.648 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:29:46.662 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:29:46.674 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 830.8875ms
+2026-03-02 17:29:46.681 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:46.690 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 883.8ms
+2026-03-02 17:29:46.702 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP3509133024664029486_20260302115946639.jpg - null null
+2026-03-02 17:29:46.779 +05:30 [INF] Sending file. Request path: '/stamped/CAP3509133024664029486_20260302115946639.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP3509133024664029486_20260302115946639.jpg'
+2026-03-02 17:29:46.895 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP3509133024664029486_20260302115946639.jpg - 200 315838 image/jpeg 192.643ms
+2026-03-02 17:29:52.214 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-LOf3xUl.jNx+6isQnFGWiPu_Gi4Ot0khGZQ_Ibac.sbw61CMumy 233470
+2026-03-02 17:29:52.231 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:52.236 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:29:52.262 +05:30 [INF] Image upload started: CAP906556127661511822.jpg
+2026-03-02 17:29:52.307 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP906556127661511822_20260302115952268.jpg
+2026-03-02 17:29:52.324 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:52.330 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:52.512 +05:30 [INF] Received HTTP response headers after 175.8765ms - 200
+2026-03-02 17:29:52.518 +05:30 [INF] End processing HTTP request after 194.0301ms - 200
+2026-03-02 17:29:52.527 +05:30 [INF] Resolved Address: shop no 22 Umang, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:29:52.873 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:29:52.907 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:29:52.925 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 682.8409ms
+2026-03-02 17:29:52.946 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:52.951 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 737.3962ms
+2026-03-02 17:29:52.970 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP906556127661511822_20260302115952859.jpg - null null
+2026-03-02 17:29:53.031 +05:30 [INF] Sending file. Request path: '/stamped/CAP906556127661511822_20260302115952859.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP906556127661511822_20260302115952859.jpg'
+2026-03-02 17:29:53.058 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP906556127661511822_20260302115952859.jpg - 200 249704 image/jpeg 88.1695ms
+2026-03-02 17:29:56.057 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-H3QenqsiuB7arlMMt3-WVhinAHvQnrRPm1uFydz+23ETUJSSDdE 289742
+2026-03-02 17:29:56.069 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:56.073 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:29:56.207 +05:30 [INF] Image upload started: CAP4918240668706720909.jpg
+2026-03-02 17:29:56.242 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP4918240668706720909_20260302115956211.jpg
+2026-03-02 17:29:56.263 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:56.267 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:29:56.480 +05:30 [INF] Received HTTP response headers after 209.8077ms - 200
+2026-03-02 17:29:56.486 +05:30 [INF] End processing HTTP request after 223.3542ms - 200
+2026-03-02 17:29:56.492 +05:30 [INF] Resolved Address: Shop No22 ,Umang Bldg, Vasant Utsav
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:29:56.867 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:29:56.884 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:29:56.903 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 818.157ms
+2026-03-02 17:29:56.921 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:29:56.934 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 876.955ms
+2026-03-02 17:29:56.950 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP4918240668706720909_20260302115956858.jpg - null null
+2026-03-02 17:29:57.053 +05:30 [INF] Sending file. Request path: '/stamped/CAP4918240668706720909_20260302115956858.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP4918240668706720909_20260302115956858.jpg'
+2026-03-02 17:29:57.110 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP4918240668706720909_20260302115956858.jpg - 200 295151 image/jpeg 160.1702ms
+2026-03-02 17:30:00.625 +05:30 [INF] Request starting HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - multipart/form-data; boundary=dart-http-boundary-vVdimVNqolsbE.2anisVK8xnr5eHwehpSL+gWNO-45S3jYsVR2A 203820
+2026-03-02 17:30:00.634 +05:30 [INF] Executing endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:30:00.639 +05:30 [INF] Route matched with {action = "UploadImage", controller = "Image", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(GpsMediaStamp.Web.Models.UploadImageRequest) on controller GpsMediaStamp.Web.Controllers.ImageController (GpsMediaStamp.Web).
+2026-03-02 17:30:00.705 +05:30 [INF] Image upload started: CAP4227348875020289809.jpg
+2026-03-02 17:30:00.753 +05:30 [INF] SHA-256 generated for file: D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\raw\CAP4227348875020289809_20260302120000714.jpg
+2026-03-02 17:30:00.781 +05:30 [INF] Start processing HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:30:00.790 +05:30 [INF] Sending HTTP request GET https://maps.googleapis.com/maps/api/geocode/json?*
+2026-03-02 17:30:00.986 +05:30 [INF] Received HTTP response headers after 181.8189ms - 200
+2026-03-02 17:30:00.996 +05:30 [INF] End processing HTTP request after 215.3805ms - 200
+2026-03-02 17:30:01.005 +05:30 [INF] Resolved Address: UMANG-C
+Thakur Village
+Mumbai 400101
+Maharashtra, India
+2026-03-02 17:30:01.315 +05:30 [INF] Image upload completed successfully.
+2026-03-02 17:30:01.326 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`5[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-02 17:30:01.338 +05:30 [INF] Executed action GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web) in 691.774ms
+2026-03-02 17:30:01.344 +05:30 [INF] Executed endpoint 'GpsMediaStamp.Web.Controllers.ImageController.UploadImage (GpsMediaStamp.Web)'
+2026-03-02 17:30:01.350 +05:30 [INF] Request finished HTTP/1.1 POST http://192.168.1.132:5039/api/image/upload - 200 null application/json; charset=utf-8 725.2154ms
+2026-03-02 17:30:01.368 +05:30 [INF] Request starting HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP4227348875020289809_20260302120001308.jpg - null null
+2026-03-02 17:30:01.391 +05:30 [INF] Sending file. Request path: '/stamped/CAP4227348875020289809_20260302120001308.jpg'. Physical path: 'D:\ravishori\GpsMediaStampV2\GpsMediaStamp.Web\storage\stamped\CAP4227348875020289809_20260302120001308.jpg'
+2026-03-02 17:30:01.407 +05:30 [INF] Request finished HTTP/1.1 GET http://192.168.1.132:5039/storage/stamped/CAP4227348875020289809_20260302120001308.jpg - 200 213565 image/jpeg 39.1711ms

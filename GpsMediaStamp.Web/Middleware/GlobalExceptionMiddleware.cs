@@ -57,8 +57,8 @@ namespace GpsMediaStamp.Web.Middleware
                 {
                     Port = 587,
                     Credentials = new NetworkCredential(
-                        "your-email@gmail.com",
-                        "your-app-password"),
+                        "ravishori@gmail.com",
+                        "nuva likv pfnw twlg"),
                     EnableSsl = true
                 };
 
@@ -72,13 +72,13 @@ namespace GpsMediaStamp.Web.Middleware
 
                 var mailMessage = new MailMessage
                 {
-                    From = new MailAddress("your-email@gmail.com"),
+                    From = new MailAddress("ravishori@gmail.com "),
                     Subject = "🚨 GpsMediaStamp System Error",
                     Body = body.ToString(),
                     IsBodyHtml = false
                 };
 
-                mailMessage.To.Add("admin-email@gmail.com");
+                mailMessage.To.Add("ravi.shori.work@gmail.com");
 
                 await smtpClient.SendMailAsync(mailMessage);
             }

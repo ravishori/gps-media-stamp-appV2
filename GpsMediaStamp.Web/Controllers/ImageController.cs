@@ -1,6 +1,10 @@
 ﻿using GpsMediaStamp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.FileProviders;
+using System;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 using GpsMediaStamp.Application.Interfaces;
@@ -22,6 +26,11 @@ namespace GpsMediaStamp.Web.Controllers
         private readonly ILocationService _locationService;
         private readonly IGoogleMapsQrService _qrService;
         private readonly ILogger<ImageController> _logger;
+
+        private readonly string[] AllowedImageExtensions =
+        {
+            ".jpg", ".jpeg", ".png", ".webp"
+        };
 
         public ImageController(
             IFileStorageService fileStorage,
@@ -45,69 +54,99 @@ namespace GpsMediaStamp.Web.Controllers
         [Consumes("multipart/form-data")]
         public async Task<IActionResult> UploadImage([FromForm] UploadImageRequest request)
         {
-            if (request?.Image == null)
-                return BadRequest("No image uploaded.");
-
-            if (request.Latitude < -90 || request.Latitude > 90 ||
-                request.Longitude < -180 || request.Longitude > 180)
+            try
             {
-                return BadRequest("Invalid latitude or longitude values.");
-            }
+                if (request?.Image == null || request.Image.Length == 0)
+                    return BadRequest(new { error = "No image uploaded." });
 
-            _logger.LogInformation("Image upload started: {File}", request.Image.FileName);
+                if (request.Latitude < -90 || request.Latitude > 90 ||
+                    request.Longitude < -180 || request.Longitude > 180)
+                {
+                    return BadRequest(new { error = "Invalid latitude or longitude values." });
+                }
 
-            // 1️⃣ Save raw image
-            using var rawStream = request.Image.OpenReadStream();
-            var rawPath = await _fileStorage.SaveRawAsync(rawStream, request.Image.FileName);
+                var extension = Path.GetExtension(request.Image.FileName).ToLowerInvariant();
+                if (!AllowedImageExtensions.Contains(extension))
+                    return BadRequest(new { error = "Invalid image file type." });
 
-            // 2️⃣ Generate Hash + Signature
-            var rawHash = _hashService.GenerateSha256(rawPath);
-            var signature = _signingService.SignHash(rawHash);
+                _logger.LogInformation("Image upload started: {File}", request.Image.FileName);
 
-            // 3️⃣ Reverse Geocode (returns full formatted address string)
-            var address =
-                await _locationService.ReverseGeocodeAsync(
+                // 1️⃣ Save RAW image
+                using var rawStream = request.Image.OpenReadStream();
+                var rawPath = await _fileStorage.SaveRawAsync(rawStream, request.Image.FileName);
+
+                // 2️⃣ Generate Hash + Signature
+                var rawHash = _hashService.GenerateSha256(rawPath);
+                var signature = _signingService.SignHash(rawHash);
+
+                // 3️⃣ Reverse Geocode
+                var address = await _locationService.ReverseGeocodeAsync(
                     request.Latitude,
                     request.Longitude);
 
-            if (string.IsNullOrWhiteSpace(address))
-            {
-                _logger.LogWarning("Reverse geocoding failed for Lat:{Lat}, Lon:{Lon}",
-                    request.Latitude, request.Longitude);
+                if (string.IsNullOrWhiteSpace(address))
+                {
+                    _logger.LogWarning("Reverse geocoding failed. Using coordinates fallback.");
+                    address = $"Lat: {request.Latitude}, Lon: {request.Longitude}";
+                }
 
-                return BadRequest("Unable to resolve address from coordinates.");
+                // 4️⃣ Generate Google Maps QR
+                var qrPath = await _qrService.GenerateGoogleMapsQrAsync(
+                    request.Latitude,
+                    request.Longitude);
+
+                // 5️⃣ Stamp image
+                var tempStampedPath = await _imageStamp.StampPremiumImageAsync(
+                    rawPath,
+                    address,
+                    request.Latitude,
+                    request.Longitude,
+                    DateTime.UtcNow,
+                    qrPath);
+
+                // 6️⃣ Save final stamped image
+                string finalStampedPath;
+                using (var stampedStream = System.IO.File.OpenRead(tempStampedPath))
+                {
+                    finalStampedPath = await _fileStorage.SaveStampedAsync(
+                        stampedStream,
+                        request.Image.FileName);
+                }
+
+                // Cleanup temporary files
+                if (System.IO.File.Exists(tempStampedPath))
+                    System.IO.File.Delete(tempStampedPath);
+
+                if (System.IO.File.Exists(qrPath))
+                    System.IO.File.Delete(qrPath);
+
+                // 7️⃣ Build PUBLIC URL (VERY IMPORTANT)
+                var fileName = Path.GetFileName(finalStampedPath);
+
+                var stampedUrl =
+                    $"{Request.Scheme}://{Request.Host}/storage/stamped/{fileName}";
+
+                _logger.LogInformation("Image upload completed successfully.");
+
+                return Ok(new
+                {
+                    StampedUrl = stampedUrl,
+                    RawHash = rawHash,
+                    Signature = signature,
+                    Address = address,
+                    Message = "Image stamped with GPS location and digitally signed."
+                });
             }
-
-            // 4️⃣ Generate Google Maps QR
-            var qrPath = await _qrService
-                .GenerateGoogleMapsQrAsync(request.Latitude, request.Longitude);
-
-            // 5️⃣ Stamp Image (pass address string instead of model)
-            var tempStampedPath = await _imageStamp.StampPremiumImageAsync(
-                rawPath,
-                address,
-                request.Latitude,
-                request.Longitude,
-                DateTime.UtcNow,
-                qrPath);
-
-            // 6️⃣ Save stamped image
-            using var stampedStream = System.IO.File.OpenRead(tempStampedPath);
-
-            var finalStampedPath = await _fileStorage.SaveStampedAsync(
-                stampedStream,
-                request.Image.FileName);
-
-            _logger.LogInformation("Image upload completed: {File}", request.Image.FileName);
-
-            return Ok(new
+            catch (Exception ex)
             {
-                RawFilePath = rawPath,
-                StampedFilePath = finalStampedPath,
-                RawHash = rawHash,
-                Signature = signature,
-                Address = address
-            });
+                _logger.LogError(ex, "Image processing failed");
+
+                return StatusCode(500, new
+                {
+                    error = "Internal server error",
+                    detail = ex.Message
+                });
+            }
         }
     }
 }

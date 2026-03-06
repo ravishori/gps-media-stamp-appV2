@@ -1,12 +1,9 @@
-﻿
-using GpsMediaStamp.Web.Models;
+﻿using GpsMediaStamp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 using GpsMediaStamp.Application.Interfaces;
@@ -29,7 +26,7 @@ namespace GpsMediaStamp.Web.Controllers
         private readonly ILocationService _locationService;
         private readonly ILogger<MediaController> _logger;
 
-        private const long MaxFileSize = 100 * 1024 * 1024;
+        private const long MaxFileSize = 500 * 1024 * 1024;
 
         private readonly string[] AllowedVideoExtensions =
         {
@@ -68,11 +65,15 @@ namespace GpsMediaStamp.Web.Controllers
                     return BadRequest(new { error = "No video file uploaded." });
 
                 if (request.Video.Length > MaxFileSize)
-                    return BadRequest(new { error = "File size exceeds 100 MB limit." });
+                    return BadRequest(new { error = "File size exceeds 500 MB limit." });
 
                 var extension = Path.GetExtension(request.Video.FileName).ToLowerInvariant();
                 if (!AllowedVideoExtensions.Contains(extension))
                     return BadRequest(new { error = "Invalid file extension." });
+
+                if (request.Latitude < -90 || request.Latitude > 90 ||
+                    request.Longitude < -180 || request.Longitude > 180)
+                    return BadRequest(new { error = "Invalid latitude or longitude values." });
 
                 _logger.LogInformation("Video upload started: {FileName}", request.Video.FileName);
 
@@ -86,48 +87,42 @@ namespace GpsMediaStamp.Web.Controllers
                 // 3️⃣ Sign
                 var signature = _signingService.SignHash(rawHash);
 
-                var visibleHash = rawHash.Substring(0, 20);
-
-                // 4️⃣ Reverse Geocode (Google API Call)
+                // 4️⃣ Reverse Geocode
                 string address = "Address unavailable";
 
                 try
                 {
                     address = await _locationService.ReverseGeocodeAsync(
-                    request.Latitude,
-                    request.Longitude) ?? "Address unavailable";
+                        request.Latitude,
+                        request.Longitude) ?? "Address unavailable";
                 }
                 catch (Exception ex)
                 {
                     _logger.LogWarning("Reverse geocoding failed: {Message}", ex.Message);
                 }
-                var random = new Random().Next(1000, 9999);
-                var evidenceId = $"EV{DateTime.UtcNow:yyyyMMddHHmmss}{random}";
-                // 5️⃣ Build Stamp Text
+
+                string latText = request.Latitude.ToString("F5");
+                string lonText = request.Longitude.ToString("F5");
+
                 var stampText =
                     $"{address}\n" +
-                    $"Lat: {request.Latitude} | Lon: {request.Longitude}\n" +
-                    $"{request.Timestamp:dd-MMM-yyyy HH:mm} IST\n" +
-                    $"SHA256: {visibleHash}...\n" +
-                    $"text='Evidence ID: {evidenceId}'";
+                    $"Latitude: {latText}\n" +
+                    $"Longitude: {lonText}\n" +
+                    $"{request.Timestamp:dd-MMM-yyyy HH:mm} IST\n";
 
-                // 6️⃣ QR Payload
-                var qrPayload = JsonSerializer.Serialize(new
-                {
-                    hash = rawHash,
-                    signature = signature,
-                    algorithm = "RSA-SHA256"
-                });
+                // 5️⃣ Generate QR
+                string mapsUrl =
+                    $"https://www.google.com/maps?q={latText},{lonText}";
 
-                var qrPath = await _qrService.GenerateQrAsync(qrPayload);
+                var qrPath = await _qrService.GenerateQrAsync(mapsUrl);
 
-                // 7️⃣ Stamp Video
+                // 6️⃣ Stamp Video
                 var tempStampedPath = await _videoStamp.StampVideoAsync(
                     rawPath,
                     stampText,
                     qrPath);
 
-                // 8️⃣ Save Final
+                // 7️⃣ Save Final Stamped File
                 string finalStampedPath;
 
                 using (var stampedStream = System.IO.File.OpenRead(tempStampedPath))
@@ -139,26 +134,28 @@ namespace GpsMediaStamp.Web.Controllers
 
                 var stampedHash = _hashService.GenerateSha256(finalStampedPath);
 
-                // Cleanup
+                // Cleanup temporary files
                 if (System.IO.File.Exists(qrPath))
                     System.IO.File.Delete(qrPath);
 
                 if (System.IO.File.Exists(tempStampedPath))
-                {
-                    await Task.Delay(500);
                     System.IO.File.Delete(tempStampedPath);
-                }
+
+                // 8️⃣ Build PUBLIC URL
+                var fileName = Path.GetFileName(finalStampedPath);
+
+                var stampedUrl =
+                    $"{Request.Scheme}://{Request.Host}/storage/stamped/{fileName}";
 
                 _logger.LogInformation("Video upload completed successfully.");
 
-                return Ok(new UploadResponse
+                return Ok(new
                 {
-                    RawFilePath = rawPath,
-                    StampedFilePath = finalStampedPath,
-                    RawFileHash = rawHash,
-                    StampedFileHash = stampedHash,
+                    StampedUrl = stampedUrl,
+                    RawHash = rawHash,
+                    StampedHash = stampedHash,
                     Signature = signature,
-                    Message = "Video stamped with GPS address and digitally signed."
+                    Message = "Video stamped with GPS location and digitally signed."
                 });
             }
             catch (Exception ex)

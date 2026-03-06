@@ -1,0 +1,77 @@
+2026-02-22 20:04:26.989 +05:30 [INF] Now listening on: https://localhost:7124
+2026-02-22 20:04:27.013 +05:30 [INF] Now listening on: http://localhost:5039
+2026-02-22 20:04:27.069 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-22 20:04:27.070 +05:30 [INF] Hosting environment: Development
+2026-02-22 20:04:27.071 +05:30 [INF] Content root path: D:\ravishori\GpsMediaStamp\GpsMediaStamp.Web
+2026-02-22 20:04:28.257 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger - null null
+2026-02-22 20:04:28.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger - 301 null null 221.4429ms
+2026-02-22 20:04:28.478 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-02-22 20:04:28.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 200 null text/html;charset=utf-8 292.4564ms
+2026-02-22 20:04:28.777 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.js - null null
+2026-02-22 20:04:28.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-22 20:04:28.831 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.js - 200 null application/javascript;charset=utf-8 53.4963ms
+2026-02-22 20:04:28.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.css - null null
+2026-02-22 20:04:28.773 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - null null
+2026-02-22 20:04:28.777 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-22 20:04:28.902 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.css - 200 152 text/css 128.2691ms
+2026-02-22 20:04:28.949 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 172.2985ms
+2026-02-22 20:04:28.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - 200 76581 text/javascript 176.7431ms
+2026-02-22 20:04:28.775 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - null null
+2026-02-22 20:04:28.795 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-02-22 20:04:28.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - 200 26248 text/css 179.1609ms
+2026-02-22 20:04:29.047 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - 200 416963 text/javascript 272.5491ms
+2026-02-22 20:04:29.188 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 394.9888ms
+2026-02-22 20:04:29.337 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-02-22 20:04:29.339 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/favicon-32x32.png - null null
+2026-02-22 20:04:29.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/favicon-32x32.png - 200 628 image/png 27.0103ms
+2026-02-22 20:04:29.380 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 43.5481ms
+2026-02-22 20:04:41.749 +05:30 [INF] Now listening on: https://localhost:7124
+2026-02-22 20:04:41.778 +05:30 [INF] Now listening on: http://localhost:5039
+2026-02-22 20:04:41.828 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-22 20:04:41.837 +05:30 [INF] Hosting environment: Development
+2026-02-22 20:04:41.843 +05:30 [INF] Content root path: D:\ravishori\GpsMediaStamp\GpsMediaStamp.Web
+2026-02-22 20:04:42.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-02-22 20:04:42.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 304 null null 120.9011ms
+2026-02-22 20:04:42.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - null null
+2026-02-22 20:04:42.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-22 20:04:42.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.css - null null
+2026-02-22 20:04:42.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - null null
+2026-02-22 20:04:42.484 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-22 20:04:42.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.js - null null
+2026-02-22 20:04:42.542 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - 304 null null 59.2843ms
+2026-02-22 20:04:42.545 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - 304 null null 61.9437ms
+2026-02-22 20:04:42.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.css - 304 null null 74.5985ms
+2026-02-22 20:04:42.569 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - 304 null null 86.5451ms
+2026-02-22 20:04:42.577 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.js - 304 null null 85.3538ms
+2026-02-22 20:04:42.498 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-02-22 20:04:42.584 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 100.7913ms
+2026-02-22 20:04:42.641 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 143.6305ms
+2026-02-22 20:04:42.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-02-22 20:04:42.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.9167ms
+2026-02-22 21:57:21.606 +05:30 [INF] Now listening on: https://localhost:7124
+2026-02-22 21:57:21.658 +05:30 [INF] Now listening on: http://localhost:5039
+2026-02-22 21:57:22.112 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-22 21:57:22.134 +05:30 [INF] Hosting environment: Development
+2026-02-22 21:57:22.140 +05:30 [INF] Content root path: D:\ravishori\GpsMediaStamp\GpsMediaStamp.Web
+2026-02-22 21:57:23.817 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-02-22 21:57:24.358 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-22 21:57:24.405 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 45.0355ms
+2026-02-22 21:57:24.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 304 null null 778.5371ms
+2026-02-22 21:57:24.634 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - null null
+2026-02-22 21:57:24.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - null null
+2026-02-22 21:57:24.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.js - null null
+2026-02-22 21:57:24.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-22 21:57:24.690 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - null null
+2026-02-22 21:57:24.780 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.js - 304 null null 79.7998ms
+2026-02-22 21:57:24.688 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.css - null null
+2026-02-22 21:57:24.731 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-02-22 21:57:24.787 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 16519 application/javascript; charset=utf-8 67.4645ms
+2026-02-22 21:57:24.808 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - 304 null null 105.1251ms
+2026-02-22 21:57:24.913 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - 304 null null 222.8009ms
+2026-02-22 21:57:24.808 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - 304 null null 173.8881ms
+2026-02-22 21:57:24.910 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.css - 304 null null 222.2132ms
+2026-02-22 21:57:25.099 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 371.723ms
+2026-02-22 21:57:25.302 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-02-22 21:57:25.400 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.1607ms
+2026-02-22 21:57:25.923 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-02-22 21:57:25.941 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.1394ms
