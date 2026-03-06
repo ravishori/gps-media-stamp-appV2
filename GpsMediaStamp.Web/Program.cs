@@ -12,14 +12,13 @@ using GpsMediaStamp.Infrastructure.Services.Qr;
 using GpsMediaStamp.Infrastructure.Services.Security;
 using GpsMediaStamp.Infrastructure.Services.Video;
 using GpsMediaStamp.Web.Middleware;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+
+using Microsoft.Extensions.FileProviders;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 //
 // 🔥 SERILOG CONFIGURATION
@@ -36,11 +35,11 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 //
-// 🔒 GLOBAL 100MB REQUEST LIMIT
+// 🔒 GLOBAL REQUEST LIMIT (500MB)
 //
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.Limits.MaxRequestBodySize = 100 * 1024 * 1024;
+    options.Limits.MaxRequestBodySize = 500 * 1024 * 1024;
     options.ListenAnyIP(5039);
 });
 
@@ -50,6 +49,7 @@ builder.WebHost.ConfigureKestrel(options =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddRazorPages();
 
 //
 // 📦 BUSINESS SERVICES
@@ -68,18 +68,16 @@ builder.Services.AddScoped<IGoogleMapsQrService, GoogleMapsQrService>();
 
 // Media Services
 builder.Services.AddScoped<IVideoStampService, VideoStampService>();
-
-// Location Service (OpenStreetMap)
-builder.Services.AddHttpClient<GoogleGeocodingService>();
-builder.Services.AddScoped<IEmailAlertService, EmailAlertService>(); 
-builder.Services.AddHttpClient<ILocationService, GoogleGeocodingService>();
 builder.Services.AddScoped<IImageStampService, ImageOverlayService>();
 builder.Services.AddScoped<FFmpegVideoProcessor>();
-builder.Services.AddRazorPages();
-builder.Configuration
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddEnvironmentVariables();
+
+// Location Service
+builder.Services.AddHttpClient<GoogleGeocodingService>();
+builder.Services.AddHttpClient<ILocationService, GoogleGeocodingService>();
+
+// Email Service
+builder.Services.AddScoped<IEmailAlertService, EmailAlertService>();
+
 //
 // 🌍 CORS POLICY
 //
@@ -87,14 +85,23 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
-        policy.WithOrigins(
-                "https://localhost:7124",
-                "http://localhost:5039"
-            )
+        policy
+            .AllowAnyOrigin()
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
 });
+
+//
+// ⚙ CONFIGURATION
+//
+builder.Configuration
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddEnvironmentVariables();
+
+builder.Services.AddControllers();
+
 
 var app = builder.Build();
 
@@ -108,11 +115,32 @@ if (app.Environment.IsDevelopment())
 }
 
 //
-// 🛡 MIDDLEWARE
+// 📂 STATIC FILE CONFIGURATION (CRITICAL PART)
+// Makes /storage publicly accessible
+//
+var storagePath = Path.Combine(Directory.GetCurrentDirectory(), "storage");
+
+if (!Directory.Exists(storagePath))
+{
+    Directory.CreateDirectory(storagePath);
+}
+
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(storagePath),
+    RequestPath = "/storage"
+});
+
+//
+// 🛡 MIDDLEWARE PIPELINE
 //
 app.UseMiddleware<GlobalExceptionMiddleware>();
-app.MapRazorPages();
+
 app.UseCors("AllowAll");
+
 app.UseAuthorization();
+
 app.MapControllers();
+app.MapRazorPages();
+
 app.Run();
