@@ -1,0 +1,74 @@
+﻿using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Drawing.Processing;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.Fonts;
+using SixLabors.ImageSharp.PixelFormats;
+
+namespace GpsMediaStamp.Infrastructure.Services.Video
+{
+    public class StampBannerGenerator
+    {
+        public async Task<string> GenerateBannerAsync(
+            string outputPath,
+            string fullStampText,
+            string qrPath)
+        {
+            int width = 600;          // Wider banner = better wrapping
+            int height = 200;         // Balanced height
+
+            using var image = new Image<Rgba32>(width, height);
+
+            image.Mutate(ctx =>
+            {
+                // 🔹 Semi-transparent dark background
+                ctx.Fill(new Rgba32(28, 32, 38, 220));
+
+                // 🔹 Thin gold border
+                int borderThickness = 3;
+                ctx.Draw(
+                    Pens.Solid(new Rgba32(212, 175, 55), borderThickness),
+                    new RectangleF(
+                        borderThickness / 2f,
+                        borderThickness / 2f,
+                        width - borderThickness,
+                        height - borderThickness
+                    )
+                );
+
+                // 🔹 QR Sizing (Balanced & Scan-Safe)
+                int qrSize = 150;   // Safe size for scanning but not huge
+
+                using var qr = Image.Load<Rgba32>(qrPath);
+
+                qr.Mutate(x => x.Resize(new ResizeOptions
+                {
+                    Size = new Size(qrSize, qrSize),
+                    Mode = ResizeMode.Stretch,
+                    Sampler = KnownResamplers.NearestNeighbor
+                }));
+
+                int qrX = 25;
+                int qrY = (height - qrSize) / 2;
+
+                ctx.DrawImage(qr, new Point(qrX, qrY), 1f);
+
+                // 🔹 Text Layout
+                var font = SystemFonts.CreateFont("Arial", 20);
+
+                var textOptions = new RichTextOptions(font)
+                {
+                    Origin = new PointF(qrX + qrSize + 25, 30),
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    VerticalAlignment = VerticalAlignment.Top,
+                    WrappingLength = width - (qrSize + 80),
+                    LineSpacing = 1.2f
+                };
+
+                ctx.DrawText(textOptions, fullStampText, Color.White);
+            });
+
+            await image.SaveAsPngAsync(outputPath);
+            return outputPath;
+        }
+    }
+}

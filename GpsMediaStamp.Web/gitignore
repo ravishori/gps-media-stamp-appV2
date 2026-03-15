@@ -1,0 +1,7 @@
+bin/
+obj/
+publish/
+*.txt
+*.mp4
+*.mov
+*.log

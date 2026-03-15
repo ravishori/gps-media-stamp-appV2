@@ -1,0 +1,743 @@
+Folder PATH listing for volume New Volume
+Volume serial number is 6EB5-0A9B
+D:.
+¦   .gitignore
+¦   appsettings.Development.json
+¦   appsettings.json
+¦   Dockerfile
+¦   GpsMediaStamp.csproj.user
+¦   GpsMediaStamp.slnx
+¦   Treestrcuture.txt
+¦   
++---.github
+¦   +---workflows
++---Controllers
+¦       HomeController.cs
+¦       
++---GpsMediaStamp.Application
+¦   ¦   Dockerfile
+¦   ¦   GpsMediaStamp.Application.csproj
+¦   ¦   
+¦   +---bin
+¦   ¦   +---Debug
+¦   ¦       +---net8.0
+¦   ¦               GpsMediaStamp.Application.deps.json
+¦   ¦               GpsMediaStamp.Application.dll
+¦   ¦               GpsMediaStamp.Application.pdb
+¦   ¦               
+¦   +---Interfaces
+¦   ¦   +---Common
+¦   ¦   ¦       IFileStorageService.cs
+¦   ¦   ¦       InMemoryVerificationRepository.cs
+¦   ¦   ¦       IVerificationRepository.cs
+¦   ¦   ¦       
+¦   ¦   +---Image
+¦   ¦   ¦       IImageStampService.cs
+¦   ¦   ¦       
+¦   ¦   +---Location
+¦   ¦   ¦       ILocationService.cs
+¦   ¦   ¦       
+¦   ¦   +---Qr
+¦   ¦   ¦       GoogleMapsQrService.cs
+¦   ¦   ¦       IQrCodeService.cs
+¦   ¦   ¦       
+¦   ¦   +---Security
+¦   ¦   ¦       IEmailAlertService.cs
+¦   ¦   ¦       IHashService.cs
+¦   ¦   ¦       ISigningService.cs
+¦   ¦   ¦       
+¦   ¦   +---Video
+¦   ¦           IVideoStampService.cs
+¦   ¦           
+¦   +---Models
+¦   ¦       LocationResult.cs
+¦   ¦       StampRequest.cs
+¦   ¦       StampResult.cs
+¦   ¦       
+¦   +---obj
+¦       ¦   GpsMediaStamp.Application.csproj.nuget.dgspec.json
+¦       ¦   GpsMediaStamp.Application.csproj.nuget.g.props
+¦       ¦   GpsMediaStamp.Application.csproj.nuget.g.targets
+¦       ¦   project.assets.json
+¦       ¦   project.nuget.cache
+¦       ¦   
+¦       +---Debug
+¦           +---net8.0
+¦               ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+¦               ¦   GpsMediaStamp.Application.AssemblyInfo.cs
+¦               ¦   GpsMediaStamp.Application.AssemblyInfoInputs.cache
+¦               ¦   GpsMediaStamp.Application.assets.cache
+¦               ¦   GpsMediaStamp.Application.csproj.CoreCompileInputs.cache
+¦               ¦   GpsMediaStamp.Application.csproj.FileListAbsolute.txt
+¦               ¦   GpsMediaStamp.Application.dll
+¦               ¦   GpsMediaStamp.Application.GeneratedMSBuildEditorConfig.editorconfig
+¦               ¦   GpsMediaStamp.Application.GlobalUsings.g.cs
+¦               ¦   GpsMediaStamp.Application.pdb
+¦               ¦   GpsMediaStamp.Application.sourcelink.json
+¦               ¦   
+¦               +---ref
+¦               ¦       GpsMediaStamp.Application.dll
+¦               ¦       
+¦               +---refint
+¦                       GpsMediaStamp.Application.dll
+¦                       
++---GpsMediaStamp.Domain
+¦   ¦   GpsMediaStamp.Domain.csproj
+¦   ¦   
+¦   +---bin
+¦   ¦   +---Debug
+¦   ¦       +---net8.0
+¦   ¦               GpsMediaStamp.Domain.deps.json
+¦   ¦               GpsMediaStamp.Domain.dll
+¦   ¦               GpsMediaStamp.Domain.pdb
+¦   ¦               
+¦   +---Entities
+¦   ¦       MediaRecord.cs
+¦   ¦       
+¦   +---Enums
+¦   ¦       MediaType.cs
+¦   ¦       
+¦   +---obj
+¦       ¦   GpsMediaStamp.Domain.csproj.nuget.dgspec.json
+¦       ¦   GpsMediaStamp.Domain.csproj.nuget.g.props
+¦       ¦   GpsMediaStamp.Domain.csproj.nuget.g.targets
+¦       ¦   project.assets.json
+¦       ¦   project.nuget.cache
+¦       ¦   
+¦       +---Debug
+¦           +---net8.0
+¦               ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+¦               ¦   GpsMediaStamp.Domain.AssemblyInfo.cs
+¦               ¦   GpsMediaStamp.Domain.AssemblyInfoInputs.cache
+¦               ¦   GpsMediaStamp.Domain.assets.cache
+¦               ¦   GpsMediaStamp.Domain.csproj.CoreCompileInputs.cache
+¦               ¦   GpsMediaStamp.Domain.csproj.FileListAbsolute.txt
+¦               ¦   GpsMediaStamp.Domain.dll
+¦               ¦   GpsMediaStamp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+¦               ¦   GpsMediaStamp.Domain.GlobalUsings.g.cs
+¦               ¦   GpsMediaStamp.Domain.pdb
+¦               ¦   GpsMediaStamp.Domain.sourcelink.json
+¦               ¦   
+¦               +---ref
+¦               ¦       GpsMediaStamp.Domain.dll
+¦               ¦       
+¦               +---refint
+¦                       GpsMediaStamp.Domain.dll
+¦                       
++---GpsMediaStamp.Infrastructure
+¦   ¦   GpsMediaStamp.Infrastructure.csproj
+¦   ¦   
+¦   +---Assets
+¦   ¦       india-flag.png
+¦   ¦       
+¦   +---bin
+¦   ¦   +---Debug
+¦   ¦       +---net8.0
+¦   ¦           ¦   GpsMediaStamp.Application.dll
+¦   ¦           ¦   GpsMediaStamp.Application.pdb
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.deps.json
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.dll
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.pdb
+¦   ¦           ¦   
+¦   ¦           +---Resources
+¦   ¦               +---Fonts
+¦   ¦                       InterVariable.ttf
+¦   ¦                       
+¦   +---obj
+¦   ¦   ¦   GpsMediaStamp.Infrastructure.csproj.nuget.dgspec.json
+¦   ¦   ¦   GpsMediaStamp.Infrastructure.csproj.nuget.g.props
+¦   ¦   ¦   GpsMediaStamp.Infrastructure.csproj.nuget.g.targets
+¦   ¦   ¦   project.assets.json
+¦   ¦   ¦   project.nuget.cache
+¦   ¦   ¦   
+¦   ¦   +---Debug
+¦   ¦       +---net8.0
+¦   ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+¦   ¦           ¦   GpsMedia.C4783917.Up2Date
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.AssemblyInfo.cs
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.AssemblyInfoInputs.cache
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.assets.cache
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.csproj.AssemblyReference.cache
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.csproj.CoreCompileInputs.cache
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.csproj.FileListAbsolute.txt
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.dll
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.GlobalUsings.g.cs
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.pdb
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.sourcelink.json
+¦   ¦           ¦   
+¦   ¦           +---ref
+¦   ¦           ¦       GpsMediaStamp.Infrastructure.dll
+¦   ¦           ¦       
+¦   ¦           +---refint
+¦   ¦                   GpsMediaStamp.Infrastructure.dll
+¦   ¦                   
+¦   +---Persistence
+¦   ¦       ApplicationDbContext.cs
+¦   ¦       
+¦   +---Resources
+¦   ¦   +---Assets
+¦   ¦   ¦       india-flag.png
+¦   ¦   ¦       sample-map.png
+¦   ¦   ¦       
+¦   ¦   +---Fonts
+¦   ¦       ¦   Inter.ttc
+¦   ¦       ¦   InterVariable-Italic.ttf
+¦   ¦       ¦   InterVariable.ttf
+¦   ¦       ¦   OFL.txt
+¦   ¦       ¦   README.txt
+¦   ¦       ¦   
+¦   ¦       +---Arial
+¦   ¦       ¦       ARIAL.TTF
+¦   ¦       ¦       ARIALBD 1.TTF
+¦   ¦       ¦       ARIALBD.TTF
+¦   ¦       ¦       ARIALBI 1.TTF
+¦   ¦       ¦       ARIALBI.TTF
+¦   ¦       ¦       ARIALBLACKITALIC.TTF
+¦   ¦       ¦       ArialCE.ttf
+¦   ¦       ¦       arialceb.ttf
+¦   ¦       ¦       ArialCEBoldItalic.ttf
+¦   ¦       ¦       ArialCEItalic.ttf
+¦   ¦       ¦       ArialCEMTBlack.ttf
+¦   ¦       ¦       ARIALI 1.TTF
+¦   ¦       ¦       ARIALI.TTF
+¦   ¦       ¦       ARIALLGT.TTF
+¦   ¦       ¦       ARIALLGTITL.TTF
+¦   ¦       ¦       ArialMdm.ttf
+¦   ¦       ¦       ArialMdmItl.ttf
+¦   ¦       ¦       ARIALN.TTF
+¦   ¦       ¦       ARIALNB.TTF
+¦   ¦       ¦       ARIALNBI.TTF
+¦   ¦       ¦       ARIALNI.TTF
+¦   ¦       ¦       ARIBLK.TTF
+¦   ¦       ¦       
+¦   ¦       +---dejavu-sans
+¦   ¦       ¦       DejaVu Fonts License.txt
+¦   ¦       ¦       DejaVuSans-Bold.ttf
+¦   ¦       ¦       DejaVuSans-BoldOblique.ttf
+¦   ¦       ¦       DejaVuSans-ExtraLight.ttf
+¦   ¦       ¦       DejaVuSans-Oblique.ttf
+¦   ¦       ¦       DejaVuSans.ttf
+¦   ¦       ¦       DejaVuSansCondensed-Bold.ttf
+¦   ¦       ¦       DejaVuSansCondensed-BoldOblique.ttf
+¦   ¦       ¦       DejaVuSansCondensed-Oblique.ttf
+¦   ¦       ¦       DejaVuSansCondensed.ttf
+¦   ¦       ¦       
+¦   ¦       +---Inter
+¦   ¦       ¦       Inter-Black.ttf
+¦   ¦       ¦       Inter-BlackItalic.ttf
+¦   ¦       ¦       Inter-Bold.ttf
+¦   ¦       ¦       Inter-BoldItalic.ttf
+¦   ¦       ¦       Inter-ExtraBold.ttf
+¦   ¦       ¦       Inter-ExtraBoldItalic.ttf
+¦   ¦       ¦       Inter-ExtraLight.ttf
+¦   ¦       ¦       Inter-ExtraLightItalic.ttf
+¦   ¦       ¦       Inter-Italic.ttf
+¦   ¦       ¦       Inter-Light.ttf
+¦   ¦       ¦       Inter-LightItalic.ttf
+¦   ¦       ¦       Inter-Medium.ttf
+¦   ¦       ¦       Inter-MediumItalic.ttf
+¦   ¦       ¦       Inter-Regular.ttf
+¦   ¦       ¦       Inter-SemiBold.ttf
+¦   ¦       ¦       Inter-SemiBoldItalic.ttf
+¦   ¦       ¦       Inter-Thin.ttf
+¦   ¦       ¦       Inter-ThinItalic.ttf
+¦   ¦       ¦       InterDisplay-Black.ttf
+¦   ¦       ¦       InterDisplay-BlackItalic.ttf
+¦   ¦       ¦       InterDisplay-Bold.ttf
+¦   ¦       ¦       InterDisplay-BoldItalic.ttf
+¦   ¦       ¦       InterDisplay-ExtraBold.ttf
+¦   ¦       ¦       InterDisplay-ExtraBoldItalic.ttf
+¦   ¦       ¦       InterDisplay-ExtraLight.ttf
+¦   ¦       ¦       InterDisplay-ExtraLightItalic.ttf
+¦   ¦       ¦       InterDisplay-Italic.ttf
+¦   ¦       ¦       InterDisplay-Light.ttf
+¦   ¦       ¦       InterDisplay-LightItalic.ttf
+¦   ¦       ¦       InterDisplay-Medium.ttf
+¦   ¦       ¦       InterDisplay-MediumItalic.ttf
+¦   ¦       ¦       InterDisplay-Regular.ttf
+¦   ¦       ¦       InterDisplay-SemiBold.ttf
+¦   ¦       ¦       InterDisplay-SemiBoldItalic.ttf
+¦   ¦       ¦       InterDisplay-Thin.ttf
+¦   ¦       ¦       InterDisplay-ThinItalic.ttf
+¦   ¦       ¦       
+¦   ¦       +---Plus_Jakarta_Sans
+¦   ¦       ¦   ¦   OFL.txt
+¦   ¦       ¦   ¦   PlusJakartaSans-Italic-VariableFont_wght.ttf
+¦   ¦       ¦   ¦   PlusJakartaSans-VariableFont_wght.ttf
+¦   ¦       ¦   ¦   README.txt
+¦   ¦       ¦   ¦   
+¦   ¦       ¦   +---static
+¦   ¦       ¦           PlusJakartaSans-Bold.ttf
+¦   ¦       ¦           PlusJakartaSans-BoldItalic.ttf
+¦   ¦       ¦           PlusJakartaSans-ExtraBold.ttf
+¦   ¦       ¦           PlusJakartaSans-ExtraBoldItalic.ttf
+¦   ¦       ¦           PlusJakartaSans-ExtraLight.ttf
+¦   ¦       ¦           PlusJakartaSans-ExtraLightItalic.ttf
+¦   ¦       ¦           PlusJakartaSans-Italic.ttf
+¦   ¦       ¦           PlusJakartaSans-Light.ttf
+¦   ¦       ¦           PlusJakartaSans-LightItalic.ttf
+¦   ¦       ¦           PlusJakartaSans-Medium.ttf
+¦   ¦       ¦           PlusJakartaSans-MediumItalic.ttf
+¦   ¦       ¦           PlusJakartaSans-Regular.ttf
+¦   ¦       ¦           PlusJakartaSans-SemiBold.ttf
+¦   ¦       ¦           PlusJakartaSans-SemiBoldItalic.ttf
+¦   ¦       ¦           
+¦   ¦       +---Roboto
+¦   ¦           ¦   OFL.txt
+¦   ¦           ¦   README.txt
+¦   ¦           ¦   Roboto-Italic-VariableFont_wdth,wght.ttf
+¦   ¦           ¦   Roboto-VariableFont_wdth,wght.ttf
+¦   ¦           ¦   
+¦   ¦           +---static
+¦   ¦                   Roboto-Black.ttf
+¦   ¦                   Roboto-BlackItalic.ttf
+¦   ¦                   Roboto-Bold.ttf
+¦   ¦                   Roboto-BoldItalic.ttf
+¦   ¦                   Roboto-ExtraBold.ttf
+¦   ¦                   Roboto-ExtraBoldItalic.ttf
+¦   ¦                   Roboto-ExtraLight.ttf
+¦   ¦                   Roboto-ExtraLightItalic.ttf
+¦   ¦                   Roboto-Italic.ttf
+¦   ¦                   Roboto-Light.ttf
+¦   ¦                   Roboto-LightItalic.ttf
+¦   ¦                   Roboto-Medium.ttf
+¦   ¦                   Roboto-MediumItalic.ttf
+¦   ¦                   Roboto-Regular.ttf
+¦   ¦                   Roboto-SemiBold.ttf
+¦   ¦                   Roboto-SemiBoldItalic.ttf
+¦   ¦                   Roboto-Thin.ttf
+¦   ¦                   Roboto-ThinItalic.ttf
+¦   ¦                   Roboto_Condensed-Black.ttf
+¦   ¦                   Roboto_Condensed-BlackItalic.ttf
+¦   ¦                   Roboto_Condensed-Bold.ttf
+¦   ¦                   Roboto_Condensed-BoldItalic.ttf
+¦   ¦                   Roboto_Condensed-ExtraBold.ttf
+¦   ¦                   Roboto_Condensed-ExtraBoldItalic.ttf
+¦   ¦                   Roboto_Condensed-ExtraLight.ttf
+¦   ¦                   Roboto_Condensed-ExtraLightItalic.ttf
+¦   ¦                   Roboto_Condensed-Italic.ttf
+¦   ¦                   Roboto_Condensed-Light.ttf
+¦   ¦                   Roboto_Condensed-LightItalic.ttf
+¦   ¦                   Roboto_Condensed-Medium.ttf
+¦   ¦                   Roboto_Condensed-MediumItalic.ttf
+¦   ¦                   Roboto_Condensed-Regular.ttf
+¦   ¦                   Roboto_Condensed-SemiBold.ttf
+¦   ¦                   Roboto_Condensed-SemiBoldItalic.ttf
+¦   ¦                   Roboto_Condensed-Thin.ttf
+¦   ¦                   Roboto_Condensed-ThinItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-Black.ttf
+¦   ¦                   Roboto_SemiCondensed-BlackItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-Bold.ttf
+¦   ¦                   Roboto_SemiCondensed-BoldItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-ExtraBold.ttf
+¦   ¦                   Roboto_SemiCondensed-ExtraBoldItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-ExtraLight.ttf
+¦   ¦                   Roboto_SemiCondensed-ExtraLightItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-Italic.ttf
+¦   ¦                   Roboto_SemiCondensed-Light.ttf
+¦   ¦                   Roboto_SemiCondensed-LightItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-Medium.ttf
+¦   ¦                   Roboto_SemiCondensed-MediumItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-Regular.ttf
+¦   ¦                   Roboto_SemiCondensed-SemiBold.ttf
+¦   ¦                   Roboto_SemiCondensed-SemiBoldItalic.ttf
+¦   ¦                   Roboto_SemiCondensed-Thin.ttf
+¦   ¦                   Roboto_SemiCondensed-ThinItalic.ttf
+¦   ¦                   
+¦   +---Services
+¦   ¦   ¦   GoogleGeocodingService.cs
+¦   ¦   ¦   
+¦   ¦   +---Common
+¦   ¦   ¦       FileStorageService.cs
+¦   ¦   ¦       HashService.cs
+¦   ¦   ¦       
+¦   ¦   +---Email
+¦   ¦   ¦       EmailAlertService.cs
+¦   ¦   ¦       
+¦   ¦   +---Location
+¦   ¦   +---Media
+¦   ¦   ¦       ImageOverlayService.cs
+¦   ¦   ¦       
+¦   ¦   +---Qr
+¦   ¦   ¦       QrCodeService.cs
+¦   ¦   ¦       
+¦   ¦   +---Security
+¦   ¦   ¦       RsaSigningService.cs
+¦   ¦   ¦       
+¦   ¦   +---Video
+¦   ¦           FFmpegVideoProcessor.cs
+¦   ¦           StampBannerGenerator - backup.txt
+¦   ¦           StampBannerGenerator.cs
+¦   ¦           VideoStampService.cs
+¦   ¦           
+¦   +---Storage
+¦       +---raw
+¦       ¦       0a4cf7d0-8f38-4c19-bd03-f6b047dfbf3f.mp4
+¦       ¦       0c443033-5f14-4112-9c4c-9df8124be39c.mp4
+¦       ¦       0d82cfa0-24ba-4f0d-ba24-96d9e316ed54.mp4
+¦       ¦       11e9028f-1dde-48a9-a104-b8d3950d5f22.mp4
+¦       ¦       12c7cb64-a5ba-4b01-8e5f-a0dfae7e38cf.mp4
+¦       ¦       25119e84-eb95-4575-bdfa-ac9169586bd9.mp4
+¦       ¦       269f883e-78e9-47c9-bc92-81fe867a88a2.mp4
+¦       ¦       316bc763-43c0-4dd9-9cd2-9d0cd64ccabc.mp4
+¦       ¦       345a67a3-984b-49f2-b679-334bd1905377.mp4
+¦       ¦       3da0a8f6-1670-409d-bb03-9a97d67598dc.mp4
+¦       ¦       61334bed-9d01-4f28-92f9-3af993689a4e.mp4
+¦       ¦       7a93ec53-d659-416c-a323-95f1593af48b.mp4
+¦       ¦       91375046-d099-4a8c-82d4-184b2bc0a467.mp4
+¦       ¦       9550266d-e04e-48c9-b3a6-f73e588d71d7.mp4
+¦       ¦       9b06c1e4-772e-480c-ab50-024914fd1c4f.mp4
+¦       ¦       a09e9346-86ae-43c9-9120-3a17135b763d.jpeg
+¦       ¦       bd6e66b3-d51d-436d-8e0f-019c3250a910.jpeg
+¦       ¦       bea071ac-072a-4778-b8bb-84b53714d352.mp4
+¦       ¦       cb19444c-b87d-460a-96ac-dfc147066c77.mp4
+¦       ¦       cb9c3bd6-339d-4cdf-9e9e-b6599b89741b.mp4
+¦       ¦       d0805c70-325a-4b57-ae99-c761b1a75ece.mp4
+¦       ¦       d2e4a8d1-59d4-4419-8f61-196689a866da.mp4
+¦       ¦       d4f4727e-2c5a-47d1-9776-34b4bbd41662.mp4
+¦       ¦       dfd545e2-947d-4d15-bcfe-1302cd7a3769.mp4
+¦       ¦       e3d650f9-3dc3-4e33-96ad-34e97f2283e2.mp4
+¦       ¦       
+¦       +---stamped
+¦               577434f9-81b1-47cf-97f0-e23ac19734d7.mp4
+¦               8e922313-e675-48eb-8f23-83de1a068e0d.jpeg
+¦               
++---GpsMediaStamp.Web
+¦   ¦   appsettings.Development.json
+¦   ¦   appsettings.json
+¦   ¦   code to upload to github -gps-media-stamp-appV2.txt
+¦   ¦   command to deploy code.txt
+¦   ¦   Dockerfile
+¦   ¦   gitignore
+¦   ¦   google.html
+¦   ¦   GpsMediaStamp.Web.csproj
+¦   ¦   GpsMediaStamp.Web.csproj.user
+¦   ¦   GpsMediaStamp.Web.http
+¦   ¦   Program.cs
+¦   ¦   
+¦   +---Assets
+¦   ¦       goldindia.png
+¦   ¦       india-logo-1.png
+¦   ¦       india-logo.png
+¦   ¦       india-logo2.png
+¦   ¦       india.png
+¦   ¦       
+¦   +---bin
+¦   ¦   +---Debug
+¦   ¦       +---net8.0
+¦   ¦           ¦   appsettings.Development.json
+¦   ¦           ¦   appsettings.json
+¦   ¦           ¦   GpsMediaStamp.Application.dll
+¦   ¦           ¦   GpsMediaStamp.Application.pdb
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.dll
+¦   ¦           ¦   GpsMediaStamp.Infrastructure.pdb
+¦   ¦           ¦   GpsMediaStamp.Web.deps.json
+¦   ¦           ¦   GpsMediaStamp.Web.dll
+¦   ¦           ¦   GpsMediaStamp.Web.exe
+¦   ¦           ¦   GpsMediaStamp.Web.pdb
+¦   ¦           ¦   GpsMediaStamp.Web.runtimeconfig.json
+¦   ¦           ¦   GpsMediaStamp.Web.staticwebassets.endpoints.json
+¦   ¦           ¦   Microsoft.Extensions.Configuration.Abstractions.dll
+¦   ¦           ¦   Microsoft.Extensions.Configuration.Binder.dll
+¦   ¦           ¦   Microsoft.Extensions.Configuration.dll
+¦   ¦           ¦   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+¦   ¦           ¦   Microsoft.Extensions.DependencyInjection.dll
+¦   ¦           ¦   Microsoft.Extensions.DependencyModel.dll
+¦   ¦           ¦   Microsoft.Extensions.Diagnostics.Abstractions.dll
+¦   ¦           ¦   Microsoft.Extensions.Diagnostics.dll
+¦   ¦           ¦   Microsoft.Extensions.FileProviders.Abstractions.dll
+¦   ¦           ¦   Microsoft.Extensions.Hosting.Abstractions.dll
+¦   ¦           ¦   Microsoft.Extensions.Http.dll
+¦   ¦           ¦   Microsoft.Extensions.Logging.Abstractions.dll
+¦   ¦           ¦   Microsoft.Extensions.Logging.dll
+¦   ¦           ¦   Microsoft.Extensions.Options.ConfigurationExtensions.dll
+¦   ¦           ¦   Microsoft.Extensions.Options.dll
+¦   ¦           ¦   Microsoft.Extensions.Primitives.dll
+¦   ¦           ¦   Microsoft.OpenApi.dll
+¦   ¦           ¦   Microsoft.Win32.SystemEvents.dll
+¦   ¦           ¦   Newtonsoft.Json.dll
+¦   ¦           ¦   QRCoder.dll
+¦   ¦           ¦   Serilog.AspNetCore.dll
+¦   ¦           ¦   Serilog.dll
+¦   ¦           ¦   Serilog.Extensions.Hosting.dll
+¦   ¦           ¦   Serilog.Extensions.Logging.dll
+¦   ¦           ¦   Serilog.Formatting.Compact.dll
+¦   ¦           ¦   Serilog.Settings.Configuration.dll
+¦   ¦           ¦   Serilog.Sinks.Console.dll
+¦   ¦           ¦   Serilog.Sinks.Debug.dll
+¦   ¦           ¦   Serilog.Sinks.File.dll
+¦   ¦           ¦   SixLabors.Fonts.dll
+¦   ¦           ¦   SixLabors.ImageSharp.dll
+¦   ¦           ¦   SixLabors.ImageSharp.Drawing.dll
+¦   ¦           ¦   Swashbuckle.AspNetCore.Swagger.dll
+¦   ¦           ¦   Swashbuckle.AspNetCore.SwaggerGen.dll
+¦   ¦           ¦   Swashbuckle.AspNetCore.SwaggerUI.dll
+¦   ¦           ¦   System.Diagnostics.DiagnosticSource.dll
+¦   ¦           ¦   System.Drawing.Common.dll
+¦   ¦           ¦   System.IO.Pipelines.dll
+¦   ¦           ¦   System.Text.Encodings.Web.dll
+¦   ¦           ¦   System.Text.Json.dll
+¦   ¦           ¦   
+¦   ¦           +---Resources
+¦   ¦           ¦   +---Fonts
+¦   ¦           ¦           InterVariable.ttf
+¦   ¦           ¦           
+¦   ¦           +---runtimes
+¦   ¦               +---browser
+¦   ¦               ¦   +---lib
+¦   ¦               ¦       +---net8.0
+¦   ¦               ¦               System.Text.Encodings.Web.dll
+¦   ¦               ¦               
+¦   ¦               +---unix
+¦   ¦               ¦   +---lib
+¦   ¦               ¦       +---net6.0
+¦   ¦               ¦               System.Drawing.Common.dll
+¦   ¦               ¦               
+¦   ¦               +---win
+¦   ¦                   +---lib
+¦   ¦                       +---net6.0
+¦   ¦                               Microsoft.Win32.SystemEvents.dll
+¦   ¦                               System.Drawing.Common.dll
+¦   ¦                               
+¦   +---Contracts
+¦   ¦       FfmpegOptions.cs
+¦   ¦       PublicKeyResponse.cs
+¦   ¦       UploadImageRequest.cs
+¦   ¦       UploadResponse.cs
+¦   ¦       UploadVideoRequest.cs
+¦   ¦       VerificationResponse.cs
+¦   ¦       
+¦   +---Controllers
+¦   ¦       CryptoController.cs
+¦   ¦       ImageController -backup .txt
+¦   ¦       ImageController.cs
+¦   ¦       TestController.cs
+¦   ¦       TestController_new.cs
+¦   ¦       VerificationController.cs
+¦   ¦       VideoController - backup.txt
+¦   ¦       VideoController.cs
+¦   ¦       
+¦   +---keys
+¦   ¦       private_key.pem
+¦   ¦       public_key.pem
+¦   ¦       
+¦   +---Logs
+¦   ¦       log-20260222.txt
+¦   ¦       log-20260223.txt
+¦   ¦       log-20260224.txt
+¦   ¦       log-20260225.txt
+¦   ¦       log-20260226.txt
+¦   ¦       log-20260227.txt
+¦   ¦       log-20260228.txt
+¦   ¦       log-20260301.txt
+¦   ¦       log-20260302.txt
+¦   ¦       log-20260306.txt
+¦   ¦       
+¦   +---Middleware
+¦   ¦       GlobalExceptionMiddleware.cs
+¦   ¦       
+¦   +---obj
+¦   ¦   ¦   GpsMediaStamp.Web.csproj.nuget.dgspec.json
+¦   ¦   ¦   GpsMediaStamp.Web.csproj.nuget.g.props
+¦   ¦   ¦   GpsMediaStamp.Web.csproj.nuget.g.targets
+¦   ¦   ¦   project.assets.json
+¦   ¦   ¦   project.nuget.cache
+¦   ¦   ¦   
+¦   ¦   +---Debug
+¦   ¦       +---net8.0
+¦   ¦           ¦   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+¦   ¦           ¦   apphost.exe
+¦   ¦           ¦   GpsMedia.C9876712.Up2Date
+¦   ¦           ¦   GpsMediaStamp.Web.AssemblyInfo.cs
+¦   ¦           ¦   GpsMediaStamp.Web.AssemblyInfoInputs.cache
+¦   ¦           ¦   GpsMediaStamp.Web.assets.cache
+¦   ¦           ¦   GpsMediaStamp.Web.csproj.AssemblyReference.cache
+¦   ¦           ¦   GpsMediaStamp.Web.csproj.CoreCompileInputs.cache
+¦   ¦           ¦   GpsMediaStamp.Web.csproj.FileListAbsolute.txt
+¦   ¦           ¦   GpsMediaStamp.Web.dll
+¦   ¦           ¦   GpsMediaStamp.Web.GeneratedMSBuildEditorConfig.editorconfig
+¦   ¦           ¦   GpsMediaStamp.Web.genruntimeconfig.cache
+¦   ¦           ¦   GpsMediaStamp.Web.GlobalUsings.g.cs
+¦   ¦           ¦   GpsMediaStamp.Web.MvcApplicationPartsAssemblyInfo.cache
+¦   ¦           ¦   GpsMediaStamp.Web.MvcApplicationPartsAssemblyInfo.cs
+¦   ¦           ¦   GpsMediaStamp.Web.pdb
+¦   ¦           ¦   GpsMediaStamp.Web.RazorAssemblyInfo.cache
+¦   ¦           ¦   GpsMediaStamp.Web.RazorAssemblyInfo.cs
+¦   ¦           ¦   GpsMediaStamp.Web.sourcelink.json
+¦   ¦           ¦   rjsmcshtml.dswa.cache.json
+¦   ¦           ¦   rjsmrazor.dswa.cache.json
+¦   ¦           ¦   rpswa.dswa.cache.json
+¦   ¦           ¦   staticwebassets.build.endpoints.json
+¦   ¦           ¦   staticwebassets.build.json
+¦   ¦           ¦   staticwebassets.build.json.cache
+¦   ¦           ¦   staticwebassets.references.upToDateCheck.txt
+¦   ¦           ¦   staticwebassets.removed.txt
+¦   ¦           ¦   swae.build.ex.cache
+¦   ¦           ¦   
+¦   ¦           +---ref
+¦   ¦           ¦       GpsMediaStamp.Web.dll
+¦   ¦           ¦       
+¦   ¦           +---refint
+¦   ¦           ¦       GpsMediaStamp.Web.dll
+¦   ¦           ¦       
+¦   ¦           +---staticwebassets
+¦   +---Pages
+¦   ¦       Error.cshtml
+¦   ¦       
+¦   +---Properties
+¦   ¦       launchSettings.json
+¦   ¦       
+¦   +---Resources
+¦   ¦   +---Fonts
+¦   ¦           ARIAL.TTF
+¦   ¦           ARIALBD 1.TTF
+¦   ¦           ARIALBD.TTF
+¦   ¦           ARIALBI 1.TTF
+¦   ¦           ARIALBI.TTF
+¦   ¦           ARIALBLACKITALIC.TTF
+¦   ¦           ArialCE.ttf
+¦   ¦           arialceb.ttf
+¦   ¦           ArialCEBoldItalic.ttf
+¦   ¦           ArialCEItalic.ttf
+¦   ¦           ArialCEMTBlack.ttf
+¦   ¦           ARIALI 1.TTF
+¦   ¦           ARIALI.TTF
+¦   ¦           ARIALLGT.TTF
+¦   ¦           ARIALLGTITL.TTF
+¦   ¦           ArialMdm.ttf
+¦   ¦           ArialMdmItl.ttf
+¦   ¦           ARIALN.TTF
+¦   ¦           ARIALNB.TTF
+¦   ¦           ARIALNBI.TTF
+¦   ¦           ARIALNI.TTF
+¦   ¦           ARIBLK.TTF
+¦   ¦           Inter.ttc
+¦   ¦           InterVariable-Italic.ttf
+¦   ¦           InterVariable.ttf
+¦   ¦           
+¦   +---security
+¦   +---Services
+¦   +---storage
+¦       +---raw
+¦       ¦       nikita joshi_20260306041721189.jpeg
+¦       ¦       
+¦       +---stamped
+¦       ¦       nikita joshi_20260306041727742.jpeg
+¦       ¦       
+¦       +---temp
++---Models
+¦       ErrorViewModel.cs
+¦       
++---notepad
++---Properties
+¦       launchSettings.json
+¦       
++---Services
+¦       IFileStorageService.cs
+¦       IHashService.cs
+¦       IImageStampService.cs
+¦       IVideoStampService.cs
+¦       
++---Views
+¦   ¦   _ViewImports.cshtml
+¦   ¦   _ViewStart.cshtml
+¦   ¦   
+¦   +---Home
+¦   ¦       Index.cshtml
+¦   ¦       Privacy.cshtml
+¦   ¦       
+¦   +---Shared
+¦           Error.cshtml
+¦           _Layout.cshtml
+¦           _Layout.cshtml.css
+¦           _ValidationScriptsPartial.cshtml
+¦           
++---wwwroot
+    ¦   favicon.ico
+    ¦   
+    +---assets
+    ¦       india-flag.png
+    ¦       sample-map.png
+    ¦       
+    +---css
+    ¦       site.css
+    ¦       
+    +---js
+    ¦       site.js
+    ¦       
+    +---lib
+        +---bootstrap
+        ¦   ¦   LICENSE
+        ¦   ¦   
+        ¦   +---dist
+        ¦       +---css
+        ¦       ¦       bootstrap-grid.css
+        ¦       ¦       bootstrap-grid.css.map
+        ¦       ¦       bootstrap-grid.min.css
+        ¦       ¦       bootstrap-grid.min.css.map
+        ¦       ¦       bootstrap-grid.rtl.css
+        ¦       ¦       bootstrap-grid.rtl.css.map
+        ¦       ¦       bootstrap-grid.rtl.min.css
+        ¦       ¦       bootstrap-grid.rtl.min.css.map
+        ¦       ¦       bootstrap-reboot.css
+        ¦       ¦       bootstrap-reboot.css.map
+        ¦       ¦       bootstrap-reboot.min.css
+        ¦       ¦       bootstrap-reboot.min.css.map
+        ¦       ¦       bootstrap-reboot.rtl.css
+        ¦       ¦       bootstrap-reboot.rtl.css.map
+        ¦       ¦       bootstrap-reboot.rtl.min.css
+        ¦       ¦       bootstrap-reboot.rtl.min.css.map
+        ¦       ¦       bootstrap-utilities.css
+        ¦       ¦       bootstrap-utilities.css.map
+        ¦       ¦       bootstrap-utilities.min.css
+        ¦       ¦       bootstrap-utilities.min.css.map
+        ¦       ¦       bootstrap-utilities.rtl.css
+        ¦       ¦       bootstrap-utilities.rtl.css.map
+        ¦       ¦       bootstrap-utilities.rtl.min.css
+        ¦       ¦       bootstrap-utilities.rtl.min.css.map
+        ¦       ¦       bootstrap.css
+        ¦       ¦       bootstrap.css.map
+        ¦       ¦       bootstrap.min.css
+        ¦       ¦       bootstrap.min.css.map
+        ¦       ¦       bootstrap.rtl.css
+        ¦       ¦       bootstrap.rtl.css.map
+        ¦       ¦       bootstrap.rtl.min.css
+        ¦       ¦       bootstrap.rtl.min.css.map
+        ¦       ¦       
+        ¦       +---js
+        ¦               bootstrap.bundle.js
+        ¦               bootstrap.bundle.js.map
+        ¦               bootstrap.bundle.min.js
+        ¦               bootstrap.bundle.min.js.map
+        ¦               bootstrap.esm.js
+        ¦               bootstrap.esm.js.map
+        ¦               bootstrap.esm.min.js
+        ¦               bootstrap.esm.min.js.map
+        ¦               bootstrap.js
+        ¦               bootstrap.js.map
+        ¦               bootstrap.min.js
+        ¦               bootstrap.min.js.map
+        ¦               
+        +---jquery
+        ¦   ¦   LICENSE.txt
+        ¦   ¦   
+        ¦   +---dist
+        ¦           jquery.js
+        ¦           jquery.min.js
+        ¦           jquery.min.map
+        ¦           
+        +---jquery-validation
+        ¦   ¦   LICENSE.md
+        ¦   ¦   
+        ¦   +---dist
+        ¦           additional-methods.js
+        ¦           additional-methods.min.js
+        ¦           jquery.validate.js
+        ¦           jquery.validate.min.js
+        ¦           
+        +---jquery-validation-unobtrusive
+                jquery.validate.unobtrusive.js
+                jquery.validate.unobtrusive.min.js
+                LICENSE.txt
+                
